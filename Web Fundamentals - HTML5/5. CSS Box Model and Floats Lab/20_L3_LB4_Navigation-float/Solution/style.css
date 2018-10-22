@@ -1,0 +1,124 @@
+* { box-sizing: border-box }
+
+html {
+    display: block;
+    content: '';
+    clear: both;
+    font-family: "Helvetica", sans-serif;
+    background: rgb(238, 238, 238);
+    color: rgb(0, 0, 0);
+    padding: 4rem 6rem 4rem 10rem;
+    font-size: 16px;
+    line-height: 1.2;
+}
+
+/*.content:after {
+    display: block;
+    content: '';
+    clear: both;
+}*/
+
+header > .site:first-of-type {
+    border-bottom: 2px solid #000;
+}
+
+header nav {
+    display: block;
+    float: right;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0 0.2rem;
+}
+
+header nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    
+    border-radius: 0.3rem;
+    color: #090;
+}
+
+.site-title {
+    display: inline-block;
+    padding-right: 5vw;
+}
+
+.site-title a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.align-right {
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+.align-left {
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+
+.align-left, .align-right {
+    max-width: 100%;
+    height: auto;
+    border: 0.2rem black solid;
+    padding: 0.5rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.7);
+}
+
+/* different method 
+img[class^="align"] {
+    max-width: 100%;
+    height: auto;
+    border: 0.2rem black solid;
+    padding: 0.5rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.7);
+}
+*/
+
+h1 {
+    font-family: "Georgia", sans-serif;
+    font-weight: normal;
+}
+
+blockquote {
+    float: right;
+    max-width: 47%;
+    font-family: "Georgia", sans-serif;
+    border-left: 4px solid rgb(221,221,221);
+    margin: 0 0 1rem 2.5rem;
+    padding: 0 0 0 1.5rem;
+    font-style: italic;
+}
+
+blockquote .author { text-align: right; }
+
+main, aside {
+    float: left;
+}
+
+main {
+    width: 70%;
+}
+
+aside {
+    width: 30%;
+    padding: 0 0 0 4rem;
+}
+
+aside nav h3 {
+    font-family: "Georgia", sans-serif;
+    font-size: 1em;
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+aside nav ul li a {
+    text-decoration: none;
+    color: rgb(110,177,72);
+}

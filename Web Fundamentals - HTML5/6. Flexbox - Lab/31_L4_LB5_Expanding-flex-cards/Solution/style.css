@@ -1,0 +1,59 @@
+html {
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    background: rgb(238, 238, 238);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex: 0 0 60rem;
+    flex-wrap: wrap;
+}
+
+.card {
+    max-width: 30rem;
+    min-width: 5rem;
+    overflow: hidden;
+    margin: 0.5rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.7);
+    border-radius: 0.5rem;
+    background: #000;
+    position: relative;
+}
+
+img {
+    display: block;
+    height: 100%;
+    max-width: 28rem;
+    border-radius: 0.5rem;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
+
+.container .card:nth-of-type(1){
+    flex: 0 3 8rem;
+    overflow: hidden;
+}
+
+.container .card:nth-of-type(2){
+    flex-grow: 5;
+}
+
+.container .card:nth-of-type(3){
+    flex: 0 3 8rem;
+}
+
+.container .card:nth-of-type(4){
+    flex: 0 3 8rem;
+}
+

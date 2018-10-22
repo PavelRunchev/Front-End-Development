@@ -1,0 +1,54 @@
+@import url("reset.css");
+@import url("typography.css");
+
+html {
+    font-family: "Helvetica", sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+body {
+    background: rgb(238,238,238);
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-items: center;
+    justify-content: center;
+    width: 80%;
+    text-align: center;
+    padding-top: 13rem;
+    padding-left: 13rem;
+    margin-right: 0;
+}
+
+li {
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+}
+
+div {
+    position: relative;
+    display: flex;
+    border: 10px solid black;
+    padding: 0.7rem;
+    margin: 0 40px;
+    margin-bottom: 6rem;
+    width: 63%;
+    height: 370px;
+    overflow: hidden;
+    background: #fff;
+    box-sizing: border-box;
+    padding-bottom: 0.7rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto 0;
+}

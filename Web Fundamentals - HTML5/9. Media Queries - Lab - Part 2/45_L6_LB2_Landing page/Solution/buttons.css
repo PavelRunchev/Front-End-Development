@@ -1,0 +1,43 @@
+
+button, .button {
+    display: inline-block;
+    position: relative;
+    outline: none;
+    padding: 0.5rem 1.2rem;
+    border: 0;
+    text-decoration: none;
+    font-size: 0.8rem;
+    line-height: 1;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 0.2rem;
+    color: #333;
+    font-weight: bold;
+    margin: 0 0 1rem 0;
+    border: 2px solid #333;
+    
+}
+
+.button + .button {
+    margin-left: 1rem;
+}
+
+button:last-child, .button:last-child {
+    margin-bottom: 0;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+    background: rgb(103,51,122);
+    color: rgb(238, 238, 238);
+}
+
+button:active,
+.button:active {
+    box-shadow: 0 0 1rem 0 rgba(103,51,122, 0.5);
+    background: rgb(255, 255, 255);
+    color: rgb(103,51,122);
+    border: 2px solid rgb(103,51,122);
+}

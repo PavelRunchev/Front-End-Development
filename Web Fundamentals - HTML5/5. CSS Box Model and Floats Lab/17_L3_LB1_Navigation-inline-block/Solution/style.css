@@ -1,0 +1,56 @@
+html {
+ 
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: rgb(0, 0, 0);
+    padding: 4rem;
+}
+
+.site > header:first-of-type {
+    border-bottom: 2px solid #000;
+
+}
+
+.site-title {
+    display: inline-block;
+    padding-right: 5vw;
+}
+
+.site-title a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: bold;
+}
+
+header nav {
+    display: inline-block;
+}
+
+header nav li {
+    display: inline-block;
+    padding: 0 0.2rem;
+}
+
+header nav li a {
+    display: block;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background: rgba(0,0,0,0.2);
+    border-radius: 0.3rem;
+    color: #090;
+}
+
+header nav li a:hover {
+    background: #090;
+    color: #fff;
+}
+
+h1 {
+    font-family: "Georgia", sans-serif;
+    font-size: 2em;
+    line-height: 1.2;
+    font-weight: normal;
+    margin-bottom: 0;
+}

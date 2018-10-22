@@ -1,0 +1,102 @@
+html {
+    font: 12px/1.5 Helvetica, sans-serif;
+}
+
+@media screen and (min-width: 500px) { 
+    html { 
+        font-size: 14px; 
+        background: yellow;
+    } 
+}
+
+@media screen and (min-width: 600px) { 
+    html { 
+        font-size: 16px; 
+        background: lightcoral;
+    } 
+}
+
+@media screen and (min-width: 800px) { 
+    html { 
+        font-size: 18px; 
+        background: lightgreen;
+    } 
+}
+
+@media screen and (min-width: 1300px) { 
+    html { 
+        font-size: 21px; 
+        background: orange;
+    } 
+}
+
+@media screen and (min-width: 1800px) { 
+    html { 
+        font-size: 23px; 
+        background: lightblue;
+    } 
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font: 1em/1.2 "Georgia", serif;
+    margin: 1em 0 0.5em 0;
+    padding: 0;
+}
+
+h1 { font-size: 2.2rem; }
+h2 { font-size: 2.0rem; }
+h3 { font-size: 1.8rem; }
+h4 { font-size: 1.6rem; }
+h5 { font-size: 1.4rem; }
+h6 { font-size: 1.2rem; }
+
+ul li  { list-style-type: square; }
+ul ul li  { list-style-type: disc; }
+ul ul ul li  { list-style-type: circle; }
+
+blockquote {
+    border-left: 4px solid #DDD;
+    font-style: italic;
+    padding: 1rem 2rem;
+    margin-left: 2rem;
+    position: relative;
+    width: 40%;
+    min-width: 15rem;
+    color: #444;
+    font-family: "Georgia", serif;
+    padding-top: 0;
+}
+
+blockquote .author { text-align: right; }
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 1.5rem;
+    border: 1px solid #CCC;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+/*
+/* Images */
+img[class^="align"] {
+    max-width: 100%;
+    height: auto;
+    border: 0.3rem black solid;
+    padding: 0.5rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.7);
+    background: rgb(255,255,255);
+}
+
+.align-right {
+    float: right;
+    margin: 0 0 1rem 1.5rem;
+}
+
+.align-left {
+    float: left;
+    margin: 0 1.5rem 1rem 0;
+}
+

@@ -1,0 +1,58 @@
+html {
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 1.2;
+    color: rgb(0, 0, 0);
+    padding: 5rem;
+}
+
+body header {
+    display: flex;
+    border-bottom: 2px solid rgb(0,0,0);
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header nav ul {
+    display: flex;
+    margin: 0;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+
+header nav li {
+    display: block;
+    list-style: none outside;
+    flex: 1 0 auto;
+}
+
+header nav li a {
+    display: block;
+    padding: 0.5rem 1rem;
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+
+header nav li a:focus,
+header nav li a:hover {
+    background: rgb(0, 153, 0);
+    color: rgb(255,255,255);
+}
+
+
+h1 {
+    font-family: "Georgia", sans-serif;
+    font-size: 1.5em;
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+.site-title a {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}

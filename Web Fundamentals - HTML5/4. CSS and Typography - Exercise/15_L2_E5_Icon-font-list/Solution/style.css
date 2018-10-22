@@ -1,0 +1,11 @@
+@import "https://use.fontawesome.com/releases/v5.3.1/css/all.css";
+
+
+html {
+    margin: 5rem 4rem;
+    font-family: "PT Sans", sans-serif;
+}
+
+ul.icons {
+    list-style-type: none;
+}

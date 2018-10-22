@@ -1,0 +1,105 @@
+@import  url("https://use.fontawesome.com/releases/v5.3.1/css/all.css");
+
+html {
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+body {
+    margin: 0 auto;
+}
+
+.viewport {
+    height: 100vh;
+    position: relative;
+}
+
+.card {
+    display: block;
+	min-width: 15rem;
+	max-width: 30rem;
+	width: 30vw;
+	box-shadow: 0 0 2.5rem 0rem rgba(0,0,0,0.2), 0 0 0.5rem 0 rgba(0,0,0,0.1) ;
+	border-radius: 0.3rem;
+	transition: box-shadow 0.3s ease;
+	position: absolute;
+	top: 50%; left: 50%;
+	transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.card .media {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+	z-index: 5;
+	overflow: hidden;
+}
+
+.card .media:after {
+	display: block;
+	content: '';
+}
+
+.card .media.portrait:after {
+	padding-top: 150%;
+}
+
+.card .media:before {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	box-shadow: 0 0 8rem 0.5rem rgba(0,0,0,0.8) inset;
+	transition: box-shadow 0.3s ease;
+	z-index: 10;
+}
+
+.card .media:hover:before {
+	box-shadow: 0 0 2rem 0 rgba(0,0,0,0.1) inset;
+}
+
+.card .media img {
+	position: relative;
+	top: 0; left: 0;
+	width: 100%;
+	height: auto;
+}
+
+/*.card .media #photo {*/
+    /*height: 50%;*/
+    /*overflow: hidden;*/
+
+/*}*/
+
+.viewport:nth-child(1) {
+    background: linear-gradient(to right, #195C9D, #2E96A0, #41CAA2);
+}
+
+.viewport:nth-child(2) {
+    background: linear-gradient(to right, #AA3673, #BB5847, #D28017);
+}
+
+.icon {
+    position: relative;
+    z-index: 20;
+}
+
+.fas.fa-link {
+    display: block;
+    position: absolute;
+    color: white;
+    z-index: 30;
+    top: 290px;
+    right: 15px;
+}
+
+.fas.fa-star {
+    display: block;
+    position: absolute;
+    color: white;
+    z-index: 30;
+    top: 720px;
+    right: 15px;
+}

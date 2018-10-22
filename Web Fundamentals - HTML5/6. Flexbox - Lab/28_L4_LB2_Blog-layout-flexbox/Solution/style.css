@@ -1,0 +1,110 @@
+@import url("reset.css");
+@import url("typography.css");
+
+body {
+    background: rgb(238, 238, 238);
+    padding: 5rem;
+}
+
+header > .site:first-of-type {
+    border-bottom: 2px solid #000;
+}
+
+header .site .site-title {
+    font-family: "Helvetica", sans-serif;
+}
+
+.site-title {
+    display: inline-block;
+    padding-right: 5vw;
+}
+
+.site-title a {
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #000;
+    font-weight: bold;
+}
+
+.align-right {
+    float: right;
+    margin: 0 0 1rem 1rem;
+}
+
+.align-left {
+    float: left;
+    margin: 0 1rem 1rem 0;
+}
+
+.align-left, .align-right {
+    max-width: 100%;
+    height: auto;
+    border: 0.2rem black solid;
+    padding: 0.5rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.7);
+}
+
+img {
+    background: rgb(255,255,255);
+}
+
+main article h1 {
+    font-family: "Georgia", serif;
+    font-size: 2em;
+    line-height: 1.2;
+    font-weight: normal;
+    margin-bottom: 0.5rem;
+}
+
+blockquote {
+    float: right;
+    max-width: 47%;
+    font-family: "Georgia", serif;
+    border-left: 4px solid rgb(221,221,221);
+    margin: 0 0 1rem 2.5rem;
+    padding: 0 0 0 1.5rem;
+    font-style: italic;
+}
+
+blockquote .author { text-align: right; }
+
+aside nav h2 {
+    font-family: "Georgia", sans-serif;
+    font-size: 1.5em;
+    line-height: 1.2;
+    font-weight: normal;
+}
+
+aside nav ul li a {
+    text-decoration: none;
+    color: rgb(0,153,0);
+}
+
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page header {
+    flex: 0 0 100%;
+}
+
+.page main {
+    flex: 1 0 40rem;
+}
+
+.page aside {
+    flex: 1 0 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-left: 4rem;
+}
+
+.page aside section {
+    flex: 1 0 15rem;
+}
+
+main article {
+    padding-right: 2rem;
+}

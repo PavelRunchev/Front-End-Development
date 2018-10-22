@@ -1,0 +1,15 @@
+@import url("https://use.fontawesome.com/releases/v5.3.1/css/all.css");
+@import url("reset.css");
+@import url("typography.css");
+@import url("button.css");
+@import url("forms.css");
+
+body {
+    background: rgb(228, 253, 235);
+    padding:4rem;
+}
+
+header > h1 {
+    text-align: center;
+}
+

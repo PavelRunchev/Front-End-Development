@@ -1,0 +1,79 @@
+@import url("reset.css");
+
+html {
+    font-family: "Helvetica", sans-serif;
+    background: rgb(238, 238, 238);
+    font-size: 16px;
+    line-height: 1.2;
+    padding: 5rem;  
+}
+
+.card {
+    display: inline-block;
+    background: rgb(255, 255, 255);
+    margin: 3rem;
+    max-width: 23rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.7);
+    border-radius: 0.3rem;
+
+}
+
+.card .media {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.card .media:after {
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+}
+
+.card .media img {
+    display: block;
+    position: absolute;
+    left: 0; right: 0;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 0.3rem;
+    border-top-right-radius: 0.3rem;
+}
+
+.card .media video {
+    display: block;
+    position: absolute;
+    left: 0; right: 0;
+    width: 100%;
+    height: auto;
+}
+
+section .content {
+    padding: 1rem;
+    overflow: hidden;
+}
+
+h3 {
+    font-family: "Georgia", sans-serif;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+section .content a {
+    float: right;
+    background: rgb(0, 153, 0);
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem 0.5rem 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+    margin: 1.5rem 1rem;
+    text-decoration: none;
+}
+
+section .content a:hover {
+    color: rgb(0, 153, 0);
+    background: rgb(255, 255, 255);
+    border: 1px solid rgb(0, 153, 0);
+    padding-top: calc(0.5rem - 1px);
+    padding-bottom: calc(0.5rem - 1px);
+}

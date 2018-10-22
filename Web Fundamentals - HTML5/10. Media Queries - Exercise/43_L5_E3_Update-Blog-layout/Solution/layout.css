@@ -1,0 +1,44 @@
+.page {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.page  > header {
+    flex: 1 0 100%;
+}
+
+header .site-title {
+    display: inline-block;
+    min-width: 20vw;
+    font-weight: bold;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: "Helvetica", sans-serif;
+}
+
+.page main {
+    flex: 1 0 70%;
+}
+
+.page aside {
+    flex: 1 0 30%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    padding-left: 4rem;
+}
+
+.page aside section {
+    flex: 1 0 19rem;
+}
+
+aside nav ul li a {
+    text-decoration: none;
+    color: rgb(0,153,0);
+    font-size: 16px;
+}
+
+main article {
+    padding-right: 2rem;
+}

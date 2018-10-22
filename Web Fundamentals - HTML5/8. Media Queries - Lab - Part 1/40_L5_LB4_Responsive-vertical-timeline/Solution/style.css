@@ -1,0 +1,10 @@
+@import url("reset.css");
+@import url("typography.css");
+@import url("timeline.css");
+
+body {
+    background: #EEE;
+    padding: 2rem;
+    font-family: "Georgia", sans-serif;
+}
+

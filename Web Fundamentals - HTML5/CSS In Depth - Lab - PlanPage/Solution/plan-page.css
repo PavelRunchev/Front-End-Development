@@ -1,0 +1,58 @@
+body {
+    background: url("../images/plan-page.jpg");
+    background: cover;
+    color: rgb(255, 255, 255);
+    font-family: "Lato", sans-serif;
+    font-size: 16px;
+    width: 100%;
+    text-align: center;
+}
+
+section {
+    text-align: center;
+}
+
+
+article {
+    background-color: rgb(38, 38, 38);
+    display: inline-block;
+    border: 5px solid rgb(66, 66, 66);
+    color: rgb(161, 161 , 161);
+    margin: 80px 20px 0 20px;
+    width: 16%;
+    text-align: center;
+}
+
+article h1 {
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+p.price {
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(39, 220, 196);
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+article button {
+    background-color: rgb(39, 220, 196);
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    Margin: 10px 0;
+    font-size: 0.9em;
+    cursor: pointer;
+    border: none;
+}
+
+article button:hover {
+    background-color: rgb(172, 172, 172);
+}

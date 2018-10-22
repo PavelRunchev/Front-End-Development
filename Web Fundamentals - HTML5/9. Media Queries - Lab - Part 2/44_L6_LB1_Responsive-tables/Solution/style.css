@@ -1,0 +1,91 @@
+@import url("reset.css");
+@import url("typography.css");
+
+
+
+body {
+    background: #EEE;
+    font-size: 14px;
+    padding: 2rem;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    margin-bottom: 1.5rem;
+    border: 1px solid #AAA;
+    border-collapse: collapse;
+
+}
+
+table thead th {
+    text-align: left;
+    background: rgb(51,51,51);
+    color: white;
+}
+
+table tr:nth-child(odd) td {
+    background-color: rgb(241, 241, 241);
+}
+
+table td, table th {
+    border: 1px solid #AAA;
+}
+
+table th, td {
+    padding-left: 0.5rem;
+    font-weight: bold;
+}
+
+table > tbody  > tr:nth-child(even) {
+    background: #FFF;
+}
+
+@media screen and (min-width: 1800px) {
+    body { background: lightgreen; }
+}
+
+@media screen and (max-width: 1799px) {
+    body { background: orange; }
+}
+
+@media screen and (max-width: 1400px) {
+    body { background: yellow; }
+}
+
+@media screen and (max-width: 800px) {
+    body { background: pink; }
+}
+
+@media screen and (max-width: 600px) {
+    body { background: lightblue; }
+    table thead { display: none ;
+    }
+
+    table, 
+    table tbody,
+    table tr, table td { display: block; }
+
+    table tr { border: 2px solid #000; }
+
+    table tbody td:before { 
+        display: inline-block;
+        width: 8rem;
+        font-weight: bold;
+        text-align: right;
+        padding-right: 1rem;
+        white-space: nowrap;
+    }
+
+    table tbody td:nth-child(1):before {
+        content: "First Name ";
+    }
+
+    table tbody td:nth-child(2):before {
+        content: "Last Name ";
+    }
+
+    table tbody td:nth-child(3):before {
+        content: "Job Title ";
+    }
+}

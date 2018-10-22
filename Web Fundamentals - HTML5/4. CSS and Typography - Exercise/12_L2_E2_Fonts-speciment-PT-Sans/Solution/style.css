@@ -1,0 +1,38 @@
+html {
+    font-family: "PT Sans", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 2rem 5rem;
+}
+
+h1, h2 {
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+
+p { margin-top: 0; }
+
+ol, ul, dl { margin: 0 0 1.5em 0; }
+
+ul {
+    padding: 0;
+    margin-left: 1.5rem;
+}
+
+ul ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* three diferent methods for list-style-type!!!*/
+ul#square {
+    list-style-type: square;
+}
+
+ul.disc {
+    list-style-type: disc;
+}
+
+ul ul ul li {
+    list-style-type:circle;
+}

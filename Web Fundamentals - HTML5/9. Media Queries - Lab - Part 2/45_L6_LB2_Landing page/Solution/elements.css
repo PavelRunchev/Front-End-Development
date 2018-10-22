@@ -1,0 +1,67 @@
+.list-people {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.list-people li,
+.list-people span {
+    display: block;
+}
+
+.list-people li {
+    list-style: none outside;
+    flex: 0 0 45%;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+@media screen and (min-width: 800px) {
+    .list-people li {
+        flex: 0 0 28%;
+    }
+}
+
+.list-people .avatar {
+    width: 6rem;
+    margin: 1rem auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    box-shadow: 0 0.2rem 1rem 0 rgba(0,0,0,0.3);
+}
+
+.list-people .avatar:before
+.list-people .avatar:after {
+    display: block;
+    content: '';
+}
+
+.list-people .avatar:before {
+    padding-top: 100%;
+}
+
+.list-people .avatar:after {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0; 
+    z-index: 5;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.2rem rgba(255,255,255,0.5) inset;
+}
+
+.list-people .avatar img {
+    display: block;
+    top: 0; left: 0;
+    width: 100%;
+    height: auto;
+}
+
+.list-people .content > *:first-child {
+    margin: 1rem 0;
+}
+
+.list-people .person .name {
+    font-weight: bold;
+}

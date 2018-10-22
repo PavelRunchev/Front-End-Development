@@ -1,0 +1,120 @@
+
+#toggle {
+    cursor: pointer;
+    background: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+}
+
+#toggle:hover {
+    background: #060;
+}
+
+nav.main ul {
+    padding: 0.5rem;;
+    margin: 0;
+    background: #fff;
+    border-radius: 0.4rem;
+}
+
+nav.main > ul { display: flex; }
+
+nav.main ul ul {
+    /* display: none; */
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 10rem;
+    transition: opacity 0.2s ease-out, transform 0.2s ease-in;
+    transform: translateY(2rem);
+}
+
+nav.main > ul > li > ul {
+    top: 100%;
+    left: 0;
+}
+
+nav.main > ul > li > ul > li > ul {
+    top: -0.5rem;
+    left: inherit;
+    right: 100%;
+}
+
+nav.main li {
+    display: block;
+    list-style: none outside;
+    cursor: pointer;
+    position: relative;
+}
+
+
+
+/* get all li tags without last child! */
+nav.main > ul > li:not(:last-child) {
+    padding-right: 0.5rem;
+}
+
+/* padding from outside on child! */
+nav.main > ul ul li:not(:last-child) {
+    padding-bottom: 0.5rem;
+}
+
+nav.main a {
+    display: block;
+    padding: 0.5rem 1rem;
+    background: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 0.4rem;
+}
+
+/* after the mouse cursor the parent remains green. the chain is visible */
+nav.main li:hover > a,
+nav.main a:hover { background: #060; }
+
+
+
+@media screen and (max-width:800px) {
+    nav.main { display: none; }
+
+    nav.main > ul { display: block; }
+
+    nav.main ul ul {
+        opacity: 1;
+        pointer-events: inherit;
+        width: auto;
+        position: static;
+        transform: translate(0, 0);
+        padding: 0.5rem 0rem 0.5rem 1.5rem;
+    }
+
+    nav.main ul ul a {
+        background: #777;
+        color: #fff;
+    }
+
+    nav.main ul ul ul a {
+        background: #CCC;
+        color: #000;
+    }
+
+    nav.main > ul > li:not(:last-child) {
+        padding: 0 0 0.5rem 0;
+    }
+
+    #main-nav-toggle:checked + header nav.main {
+        display: block;
+        flex: 1 0 100%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    #toggle { display: none; }
+
+    nav.main li:hover  > ul { 
+        opacity: 1;
+        pointer-events: inherit;
+        transform: translateY(0);
+     }
+}

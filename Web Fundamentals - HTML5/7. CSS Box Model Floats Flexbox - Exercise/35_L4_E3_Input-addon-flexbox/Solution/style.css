@@ -1,0 +1,92 @@
+@import  url("https://use.fontawesome.com/releases/v5.3.1/css/all.css");
+@import url("typography.css");
+
+body {
+    padding: 5rem;
+    background: rgb(255,255,255);
+}
+
+form {
+    max-width: 35rem;
+}
+
+form,
+form fieldset,
+form legend,
+form label,
+form input {
+    display: block;
+}
+
+form fieldset {
+	padding: 2.5em 2em 2em 2em;
+	position: relative;
+}
+
+form fieldset,
+form legend {
+	border: 2px solid rgb(216, 216, 216);
+	background: rgb(238,238,238);
+	border-radius: 0.3rem;
+	box-shadow: 0 0 1rem 0.1rem rgba(0,0,0,0.1);
+}
+
+form legend {
+	width: 30%;
+	padding: 0.5rem 1rem;
+	left: -1px;
+	top: -1.4rem;
+	position: absolute;
+}
+
+form label { font-weight: bold; }
+
+.field .input {
+	display: flex;
+	position: relative;
+    align-items: center;
+    border: 2px solid rgb(216, 216, 216);
+    border-radius: 0.3rem;
+    background: rgb(255,255,255);
+}
+
+.field .input input {
+	border: none;
+	flex: 1 1 auto;
+	padding: 0.8rem;
+	outline: none;
+    margin: 0 auto;
+	z-index: 2;
+    order: 2;
+}
+
+.field .input .fas {
+	z-index: 3;
+	position: relative;
+	padding: 0 0 0 0.8rem;
+	font-size: 0.9em;
+    order: 1;
+}
+
+.submit {
+    margin: 1rem 0;
+    padding: 0.4rem 0.8rem;
+    border: 2px solid rgb(216, 216, 216);
+    cursor: pointer;
+    text-align: center;
+    border-radius: 0.4rem;
+    background: rgb(255,255,255);
+}
+
+.submit:hover {
+    border: 2px solid rgb(0,154,25);
+    background: white;
+    color: rgb(0,154,25);
+}
+
+form .field .input:hover,
+form .field .input input:hover {
+    color: rgb(0,154,25);
+    border-color: rgb(0,154,25);
+}
+
