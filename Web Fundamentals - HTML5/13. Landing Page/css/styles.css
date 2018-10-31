@@ -1,0 +1,385 @@
+@import url("https://use.fontawesome.com/releases/v5.4.1/css/all.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("./reset.css");
+
+body {
+    font-family: Montserrat, sans-serif;
+}
+
+/*
+/* Header */
+header {
+    background-image: url("../images/Layer-759_02.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #FFF;
+}
+
+nav {
+    background: rgba(186,146,94,0.9);
+    width: 65%;
+    margin: 0 auto;
+    position: relative;
+    top: 1rem;
+}
+
+nav ul  {
+    text-align: center;
+}
+
+
+nav ul li {
+    display: inline-block;
+    padding: 1rem 1.7rem;
+} 
+
+nav ul li a {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+header .title {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+header .title h1 {
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bolder;
+    padding-bottom: 2rem;
+    text-shadow: 2px 2px 2px rgba(0,0,0, 1);
+}
+
+header .title p {
+    font-size: 16px;
+    padding-bottom: 1rem;
+    width: 20%;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px rgba(0,0,0, 1);
+}
+
+header .title button {
+    padding: 0.8rem 1rem;
+    border-radius: 0.4rem;
+    background: #000;
+    margin-bottom: 10rem;
+    color: #FFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+}
+
+header .title button .fas {
+    color: rgb(186,146,94);
+}
+
+header .title button:hover {
+    background: rgb(186,146,94);
+    color: #000;
+}
+
+header .title button .fas:hover,
+header .title button:focus ~ .fas {
+    color: #000;
+}
+
+/*
+/* Section Industries */
+.industries {
+    padding: 2rem;
+}
+
+.industries h1 {
+    text-align: center;
+    color: #000;
+    font-weight: bolder;
+    vertical-align: top;
+    font-size: 34px;
+}
+
+.industries .first-row-industries,
+.industries .second-row-industries {
+    display: inline-block;
+    padding: 1rem;
+    text-align: center;
+
+  
+}
+
+.industries article {
+    display: inline-block;
+    width: 33%;
+    text-align: left;
+    padding: 1rem 2.5rem;;
+}
+
+.industries article h3 {
+    text-align: left;
+    font-size: 16px;
+}
+
+.industries article p {
+    padding-top: 0.5rem;
+    text-align: left;
+    font-size: 14px;
+}
+
+.industries article .fas,
+.industries article .far,
+.industries article .fa {
+    position: relative;
+    left: -2.7rem;
+    top: 1.5rem;
+    padding: 0.6rem;
+    border-radius: 50%;
+    background: #000;
+    color: #FFF;
+   
+}
+
+.industries article .fa-truck,
+.industries article .fa-lightbulb {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+}
+
+/*
+/* Middle section */
+.middle {
+    background: linear-gradient(rgba(255,255,255,0.7),rgba(255,255,255,0.7)),
+    url("../images/steel-bg.jpg"), no-repeat;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.middle-nested {
+    font-family: "Helvetica", sans-serif;
+    font-weight: bold;
+    color: #000;
+    font-size: 20px;
+}
+
+.middle p:first-child {
+    color: rgb(186,146,94);
+}
+
+/*
+/*  Section choose */
+
+.choose {
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
+    url("../images/background-choose-us.jpg"), no-repeat, center;
+    text-align: center;
+    color: #FFF;
+}
+
+.choose h1 {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    font-weight: bolder;
+    font-size: 45px;
+}
+
+.choose a > article {
+    display: inline-block;
+    width: 25%;
+    border: 2px solid rgb(186,146,94);
+    margin: 0.5rem 1rem 2rem 1rem;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    font-weight: bolder;
+    color: #FFF;
+
+}
+
+.choose a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.choose a article:hover {
+    background: #FFF;
+    color: #000;
+}
+
+.choose a article p {
+    padding: 2rem 3.5rem;
+    text-align: left;
+    font-size: 12px;
+}
+
+/*
+/* Section Person */
+.person {
+    background: url("../images/consulting-woman.jpg");
+    padding: 3rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.person .person-right {
+    padding: 3.5rem 2.5rem 2.5rem 2.5rem;
+    display: block;
+    width: 29%;
+    opacity: 0.8;
+    background: #FFF;
+}
+
+.person .person-right p {
+    padding-bottom: 1rem;
+    font-size: 13px;
+}
+
+.person .person-right p .fas {
+    color: rgb(186,146,94);
+    font-size: 6px;
+    position: relative;
+    top: -1rem;
+}
+
+.person .person-right .data {
+    display: block;
+    width: 100%;
+    height: 15rem;
+    background: #000;
+    color: #FFF;
+}
+
+.person .person-right .data .business {
+    float: right;
+    font-size: 12px;
+    padding: 0.5rem;
+}
+
+.person .person-right .data h2 {
+    color: #FFF;
+    font-weight: bold;
+    padding: 2rem 0 0 1rem;
+}
+
+/*
+/* Footer */
+
+footer .partner {
+    padding: 1rem;
+    text-align: center;
+}
+
+footer .partner div {
+    display: inline-block;
+    width: 8%;
+    vertical-align: middle;
+    text-align: center;
+    margin: 0 1rem;
+}
+
+footer .partner div:last-child {
+    margin: 0;
+}
+
+footer .partner .volker img {
+    width: 7rem;
+    height: 3rem;
+}
+
+footer .partner div img {
+    margin: auto 0;
+}
+
+/*-------------------*/
+
+footer .footer-main {
+    background: rgb(8,8,32);
+    color: #FFF;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 10px;
+}
+
+footer .footer-main article {
+    display: inline-block;
+    width: 28%;
+    padding: 1rem 0 0 0;
+    margin: 0 2rem;
+    vertical-align: text-top;
+    height: auto;
+}
+
+footer .footer-main .consulting h3 {
+    text-align: left;
+    padding-left: 6.5rem;
+    padding-bottom: 1rem;
+}
+
+footer .footer-main .consulting .avenue,
+footer .footer-main .consulting .week,
+footer .footer-main .consulting .phone {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+footer .footer-main .consulting .fa-clock,
+footer .footer-main .consulting .fa-phone {
+    transform: scaleX(-1);
+    -moz-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    -ms-transform: scaleX(-1);
+}
+
+footer .footer-main .consulting .logo {
+    padding: 0.5rem 0 0.5rem 5rem;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+footer .footer-main .consulting .logo i {
+    background: rgb(131,131,143);
+    border-radius: 50%;
+    padding: 0.5rem;
+    margin: 0.4rem;
+    color: #000;
+}
+
+footer .footer-main .consulting .logo .fa-facebook-f {
+    padding: 0.5rem 0.7rem;
+}
+
+footer .footer-main .links {
+    text-align: left;
+}
+
+footer .footer-main .links div {
+    display: inline-block;
+    padding: 0.5rem 1rem 1rem 1rem;
+    vertical-align: top;
+}
+
+footer .footer-main .links a {
+    display: block;
+    text-decoration: none;
+    color: rgb(186,146,94);
+    padding: 0 0 0.5rem 0;
+}
+
+footer .footer-main .widget {
+    padding: 1rem 0 0.3rem 0;
+    width: 22%;
+}
+
+footer .footer-main h3 {
+    text-align: left;
+    padding-bottom: 0.8rem;
+}
+
+footer .footer-main .widget img {
+    width: 28%;
+    height: auto;
+}
