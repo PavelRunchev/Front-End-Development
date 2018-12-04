@@ -1,0 +1,8 @@
+1. Circle to Box -> https://codepen.io/raidersgb/pen/eQyEZp
+2. Animation Delay Nth Child -> https://codepen.io/raidersgb/pen/LXejme
+3. Animation Gradients -> https://codepen.io/raidersgb/pen/aQEyPL
+4. Basic Layout with SASS and Flexbox -> https://codepen.io/raidersgb/pen/xQpLMp
+5. Aspect Ratio boxes with SASS -> https://codepen.io/raidersgb/pen/WYdZNr
+6. For Loops and Animation Delay -> https://codepen.io/raidersgb/pen/oQperM
+
+

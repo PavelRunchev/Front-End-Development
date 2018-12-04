@@ -1,0 +1,55 @@
+@import url("https://use.fontawesome.com/releases/v5.5.0/css/all.css");
+@import url("https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i,900,900i");
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', serif;
+}
+
+li {
+    display: block;
+    list-style: none;
+    opacity: 0;
+    padding: 0.5rem 1rem;
+    animation: slidein 0.4s ease forwards;
+}
+
+a {
+    display: block;
+    font-size: 2em;
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+span {
+  text-align: center;
+  width: 2em;
+
+}
+
+li:nth-child(1) { animation-delay: 0.2s; }
+li:nth-child(2) { animation-delay: 0.4s; }
+li:nth-child(3) { animation-delay: 0.6s; }
+li:nth-child(4) { animation-delay: 0.8s; }
+li:nth-child(5) { animation-delay: 1.0s; }
+li:nth-child(6) { animation-delay: 1.2s; }
+li:nth-child(7) { animation-delay: 1.4s; }
+li:nth-child(8) { animation-delay: 1.6s; }
+
+@keyframes slidein {
+	from {
+        opacity: 0;
+        transform: translate(-3.5em, 0);
+	}
+
+	to {
+		opacity: 1;
+		transform: translate(0, 0);
+	}
+}

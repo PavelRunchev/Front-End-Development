@@ -1,0 +1,67 @@
+body {
+	padding: 2rem;
+}
+
+p { padding-bottom: 1.5rem; }
+
+.site {
+	max-width: 40rem;
+	margin: 0 auto;
+
+	/* variable */
+	$cn: &;
+
+	/* main root */
+	@at-root {
+		/* selector */
+		#{&}-header {
+			border-bottom: 2px solid #000;
+
+			@at-root #{$cn}-branding {
+				font-style: italic;
+			}
+
+			@at-root #{$cn}-title {
+				font-size: 1.5rem;
+				padding-bottom: 0.2em;
+			}
+		}
+
+		/* selector */
+		#{&}-footer {
+			border-top: 2px solid #000;
+		}
+	}
+}
+
+.hentry {
+	border-top: 2px solid #000;
+	padding-top: 2rem;
+
+	a {
+		color: red;
+		&:hover {
+			background: #000;
+			color: #FFF;
+			text-decoration: none;
+		}
+
+		&:before {
+			content: '<<< ';
+			display: inline-block;
+		}
+
+		&:after {
+			content: ' >>>';
+			display: inline-block;
+		}
+	}
+
+	blockquote {
+		padding: 0 2rem 2rem 2rem;
+		
+		p:last-child {
+			padding-bottom: 0;
+		}
+	}
+}

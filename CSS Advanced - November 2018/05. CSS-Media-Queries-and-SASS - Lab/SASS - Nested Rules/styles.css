@@ -1,0 +1,15 @@
+body {
+  padding: 4rem; }
+
+p {
+  padding-bottom: 1.5rem; }
+
+.hentry {
+  border-top: 2px solid #000;
+  padding-top: 2rem; }
+  .hentry blockquote {
+    padding: 0 2rem 2rem 2rem; }
+    .hentry blockquote p:last-child {
+      padding-bottom: 0; }
+
+/*# sourceMappingURL=styles.css.map */

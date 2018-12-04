@@ -1,0 +1,43 @@
+body {
+  padding: 2rem; }
+
+p {
+  padding-bottom: 1.5rem; }
+
+.site {
+  max-width: 40rem;
+  margin: 0 auto;
+  /* variable */ }
+/* selector */
+  .site-header {
+    border-bottom: 2px solid #000; }
+    .site-branding {
+      font-style: italic; }
+    .site-title {
+      font-size: 1.5rem;
+      padding-bottom: 0.2em; }
+
+  .site-footer {
+    border-top: 2px solid #000; }
+
+.hentry {
+  border-top: 2px solid #000;
+  padding-top: 2rem; }
+  .hentry a {
+    color: red; }
+    .hentry a:hover {
+      background: #000;
+      color: #FFF;
+      text-decoration: none; }
+    .hentry a:before {
+      content: '<<< ';
+      display: inline-block; }
+    .hentry a:after {
+      content: ' >>>';
+      display: inline-block; }
+  .hentry blockquote {
+    padding: 0 2rem 2rem 2rem; }
+    .hentry blockquote p:last-child {
+      padding-bottom: 0; }
+
+/*# sourceMappingURL=styles.css.map */

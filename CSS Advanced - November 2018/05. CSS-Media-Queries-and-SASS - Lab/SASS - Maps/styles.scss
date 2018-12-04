@@ -1,0 +1,103 @@
+$map: (
+	title-color: orange, 
+	ancher-color: lightgreen, 
+	symbol: red, 
+	global-padding: 2rem
+);
+
+// placeholder selector 
+%profit {
+	display: inline-block;
+	font-style: normal;
+	content: '&';
+	color: map-get($map, symbol);
+}
+
+// placeholder selector 
+%decoration {
+	text-decoration: none;
+	color: map-get($map, title-color);
+}
+
+// @extend - selector - directive, which allows one selector to inherit styles of another selector - example -> %decoration
+
+body {
+	padding: map-get($map, global-padding);
+}
+
+.site {
+	max-width: 40rem;
+	margin: 0 auto;
+	text-align: center;
+
+	// variable
+	$cn: &;
+
+	@at-root {
+		// selector
+		#{&}-header {
+			border-bottom: 2px solid #000;
+
+			@at-root #{$cn}-branding {
+				font-style: italic;
+			}
+
+			@at-root #{$cn}-title {
+				font-size: 1.5rem;
+				padding-bottom: 0.2em;
+
+				a {
+					@extend %decoration;
+				}
+
+				&:after {
+					@extend %profit;
+				}
+			}
+		}
+
+		#{&}-footer {
+			border-top: 2px solid #000;
+			padding-top: 1rem;
+			text-align: center;
+
+			&:after {
+				@extend %profit;
+			}
+		}
+	}
+}
+
+.hentry {
+	border-top: 2px solid #000;
+	padding-top: map-get($map, global-padding);
+	text-align: left;
+
+	a {
+		color: map-get($map, ancher-color);
+		&:hover {
+			background: #000;
+			color: #FFF;
+			text-decoration: none;
+		}
+
+		&:before {
+			content: '<<< ';
+			display: inline-block;
+		}
+
+		&:after {
+			content: ' >>>';
+			display: inline-block;
+		}
+	}
+
+	blockquote {
+		padding: 0 map-get($map, global-padding) map-get($map, global-padding) map-get($map, global-padding);
+		
+		p:last-child { padding-bottom: 0; }
+	}
+}
+
+
+

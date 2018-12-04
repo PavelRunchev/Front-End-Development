@@ -1,0 +1,50 @@
+.site-title:after, .site-footer:after {
+  display: inline-block;
+  font-style: normal;
+  content: '&';
+  color: red; }
+
+.site-title a {
+  text-decoration: none;
+  color: orange; }
+
+body {
+  padding: 2rem; }
+
+.site {
+  max-width: 40rem;
+  margin: 0 auto; }
+  .site-header {
+    border-bottom: 2px solid #000; }
+    .site-branding {
+      font-style: italic; }
+    .site-title {
+      font-size: 1.5rem;
+      padding-bottom: 0.2em; }
+
+  .site-footer {
+    border-top: 2px solid #000;
+    padding-top: 1rem;
+    text-align: center; }
+
+.hentry {
+  border-top: 2px solid #000;
+  padding-top: 2rem; }
+  .hentry a {
+    color: lightgreen; }
+    .hentry a:hover {
+      background: #000;
+      color: #FFF;
+      text-decoration: none; }
+    .hentry a:before {
+      content: '<<< ';
+      display: inline-block; }
+    .hentry a:after {
+      content: ' >>>';
+      display: inline-block; }
+  .hentry blockquote {
+    padding: 0 2rem 2rem 2rem; }
+    .hentry blockquote p:last-child {
+      padding-bottom: 0; }
+
+/*# sourceMappingURL=styles.css.map */

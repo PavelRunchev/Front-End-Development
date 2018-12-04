@@ -1,0 +1,42 @@
+$global-padding: 2rem;
+
+body {
+    padding: $global-padding;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+$boxSize: 5rem;
+
+ul.items {
+	display: flex;
+	padding: $global-padding;
+
+	li {
+		list-style: none;
+        margin: 1rem;
+		background: black;
+		width: $boxSize;
+		height: $boxSize;
+		animation: slideDown 0.3s 1 both;
+	}
+}
+
+@for $i from 1 through 5 {
+	ul.items li:nth-child(#{$i}) {
+		animation-delay: $i * 0.15s;
+	}
+}
+
+@keyframes slideDown {
+	from {
+		opacity: 0;
+		transform: translateY(-1 * $boxSize);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

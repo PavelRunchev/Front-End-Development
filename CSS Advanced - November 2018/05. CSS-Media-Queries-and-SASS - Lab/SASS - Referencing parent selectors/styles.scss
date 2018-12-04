@@ -1,0 +1,40 @@
+body {
+	padding: 2rem;
+}
+
+p {
+	padding-bottom: 1.5rem;
+}
+
+.hentry {
+	border-top: 2px solid #000;
+	padding-top: 2rem;
+
+	a {
+		color: red;
+		/* referencing to parent - & - selector */
+		&:hover {
+			background: #000;
+			color: #FFF;
+			text-decoration: none;
+		}
+		/* referencing to parent - & - selector */
+		&:before {
+			content: '<<< ';
+			display: inline-block;
+		}
+		/* referencing to parent - & - selector */
+		&:after {
+			content: ' >>>';
+			display: inline-block;
+		}
+	}
+
+	blockquote {
+		padding: 0 2rem 2rem 2rem;
+		
+		p:last-child {
+			padding-bottom: 0;
+		}
+	}
+}

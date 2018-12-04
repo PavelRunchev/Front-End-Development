@@ -1,0 +1,53 @@
+$paragraph: bold;
+$global-padding: 1rem;
+
+@mixin aspec-ratio($x, $y) {
+    $padding: unquote(( $y / $x) * 100 + "%");
+
+    &:before {
+        display: block;
+        content: '';
+        padding: $padding;
+    }
+
+    &:after {
+        display: flex;
+        content: '#{$x}x#{$y}';
+        color: #FFF;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+    }
+}
+
+@mixin globalMixin {
+    width: 13vw;
+    background: black;
+    color: white;
+    margin: 0 1em 2rem 0;
+    border-radius: 0.3rem;
+    position: relative;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.media-wrapper {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: $global-padding;
+
+    & .media { @include globalMixin; }
+
+     & .ratio-1x1 { @include aspec-ratio(1,1); }
+     & .ratio-16x9 { @include aspec-ratio(16,9); }
+     & .ratio-16x10 { @include aspec-ratio(16,10); }
+     & .ratio-9x16 { @include aspec-ratio(9,16); }
+     & .ratio-3x2 { @include aspec-ratio(3,2); }
+     & .ratio-2x3 { @include aspec-ratio(2,3); }
+}
+

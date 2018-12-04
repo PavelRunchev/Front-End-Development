@@ -1,0 +1,50 @@
+
+:root {
+    --size-box-width: 10rem;
+}
+
+body {
+    background: lightcyan;
+    margin: 0;
+    padding: 2rem;
+    position: relative;
+    height: 95vh;
+}
+
+.box {
+    background: lightpink;
+    width: var(--size-box-width);
+    height: var(--size-box-width);
+    box-shadow: 0 0 1rem 0 rgba(0,0,0, 0.7);
+    border-radius: 0.5rem;
+    margin-bottom: 4rem;
+    animation: experimental 4s infinite ease-in-out;
+    position: absolute;
+    top: 0; left: 0;
+}
+
+@keyframes experimental {
+    0% {
+        top: 2rem; left: 2rem;
+    }
+
+    25% {
+        top: 2rem;
+        left: calc(95vw - var(--size-box-width));
+    }
+
+    50% {
+        left: calc(95vw - var(--size-box-width));
+        top: calc(95vh - var(--size-box-width));
+    }
+
+    75% {
+        top: calc(95vh - var(--size-box-width));
+        left: 2rem;
+    }
+
+    100% {
+        top: 2rem;
+        left: 2rem;
+    }
+}

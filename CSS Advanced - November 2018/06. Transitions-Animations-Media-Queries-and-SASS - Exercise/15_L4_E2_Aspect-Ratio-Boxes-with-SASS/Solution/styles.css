@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+.media-wrapper {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 1rem; }
+  .media-wrapper .media {
+    width: 13vw;
+    background: black;
+    color: white;
+    margin: 0 1em 2rem 0;
+    border-radius: 0.3rem;
+    position: relative; }
+  .media-wrapper .ratio-1x1:before {
+    display: block;
+    content: '';
+    padding: 100%; }
+  .media-wrapper .ratio-1x1:after {
+    display: flex;
+    content: "1x1";
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .media-wrapper .ratio-16x9:before {
+    display: block;
+    content: '';
+    padding: 56.25%; }
+  .media-wrapper .ratio-16x9:after {
+    display: flex;
+    content: "16x9";
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .media-wrapper .ratio-16x10:before {
+    display: block;
+    content: '';
+    padding: 62.5%; }
+  .media-wrapper .ratio-16x10:after {
+    display: flex;
+    content: "16x10";
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .media-wrapper .ratio-9x16:before {
+    display: block;
+    content: '';
+    padding: 177.7777777778%; }
+  .media-wrapper .ratio-9x16:after {
+    display: flex;
+    content: "9x16";
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .media-wrapper .ratio-3x2:before {
+    display: block;
+    content: '';
+    padding: 66.6666666667%; }
+  .media-wrapper .ratio-3x2:after {
+    display: flex;
+    content: "3x2";
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .media-wrapper .ratio-2x3:before {
+    display: block;
+    content: '';
+    padding: 150%; }
+  .media-wrapper .ratio-2x3:after {
+    display: flex;
+    content: "2x3";
+    color: #FFF;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+/*# sourceMappingURL=styles.css.map */

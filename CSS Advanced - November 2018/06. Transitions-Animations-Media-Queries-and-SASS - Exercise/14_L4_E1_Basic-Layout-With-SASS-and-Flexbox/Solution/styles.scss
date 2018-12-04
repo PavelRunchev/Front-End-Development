@@ -1,0 +1,77 @@
+$global-padding: 2rem;
+$padding-top-bottom: 1rem;
+$globalColor: black;
+
+@mixin globalPadding {
+    padding: $padding-top-bottom $global-padding;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Georgia', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+
+    @media screen and (min-width: 375px) { font-size: 12px; }
+    @media screen and (min-width: 576px) { font-size: 14px; padding: 0 $global-padding; }
+    @media screen and (min-width: 1440px) { font-size: 16px; }
+    @media screen and (min-width: 1920px) { font-size: 18px; }
+}
+
+
+.site {
+    max-width: 60rem;
+    margin: 0 auto;
+
+    $parent: &;
+
+    #{&}-header {
+        @include globalPadding; 
+    
+        @at-root #{$parent}-title {
+            font-size: 1.8em;
+            margin-bottom: 0;
+            letter-spacing: 2px;
+        }
+    
+        @at-root #{$parent}-description {
+            font-style: italic;
+        }
+    }
+    
+    #{&}-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        border-top: 2px solid #000;
+        border-bottom: 2px solid #000;
+    
+        @at-root #{$parent}-content {
+            padding: $padding-top-bottom 0 $padding-top-bottom $global-padding; 
+            flex: 1 0 18rem;
+
+            p { padding: 0 2rem 0 0; }
+        }
+
+        @at-root #{$parent}-bar {
+            padding: $padding-top-bottom $global-padding;
+            flex: 1 0 7rem;
+
+            li {
+                list-style-type: circle;
+                padding: 0.1rem;
+            }
+
+            a {
+                text-decoration: none;
+                color: $globalColor;
+            }
+        }
+    }
+    
+    #{&}-footer {
+        @include globalPadding; 
+    }
+}
+

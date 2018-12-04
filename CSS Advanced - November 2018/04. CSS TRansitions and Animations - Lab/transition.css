@@ -1,0 +1,41 @@
+
+body {
+    background: lightyellow;
+    margin: 0;
+    padding: 4rem;
+}
+
+.box {
+    background: lightpink;
+    width: 5rem;
+    height: 5rem;
+    transition: transform 3s linear;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0, 0.7);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+.box-skew {
+    background: lightpink;
+    width: 5rem;
+    height: 5rem;
+    transition: transform;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0, 0.7);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+}
+
+body:hover .box { 
+    transform: translateX(80rem) rotate(180deg); 
+}
+
+.box.cubic-bezier { transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); }
+.box.linear         { transition-timing-function: linear; }
+.box.ease           { transition-timing-function: ease; }
+.box.ease-in        { transition-timing-function: ease-in; }
+.box.ease-out       { transition-timing-function: ease-out; }
+.box.ease-in-out    { transition-timing-function: ease-in-out; }
+
+body:hover .box-skew {
+    transform: skew(20deg, 30deg);
+}

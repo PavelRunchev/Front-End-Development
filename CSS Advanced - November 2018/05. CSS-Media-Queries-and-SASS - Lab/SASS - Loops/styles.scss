@@ -1,0 +1,140 @@
+@import 'https://use.fontawesome.com/releases/v5.5.0/css/all.css';
+
+$title-color: orange;
+$ancher-color: lightgreen;
+$symbol-color: red;
+$global-padding: 2rem;
+
+// placeholder selector 
+%profit {
+	display: inline-block;
+	font-style: normal;
+	content: '&';
+	color: $symbol-color;
+}
+
+// placeholder selector 
+%decoration {
+	text-decoration: none;
+	color: $title-color;
+}
+
+// @extend - selector - directive, which allows one selector to inherit styles of another selector - example -> %decoration
+
+body {
+	padding: $global-padding;
+}
+
+.site {
+	max-width: 40rem;
+	margin: 0 auto;
+
+	// variable
+	$cn: &;
+
+	@at-root {
+		// selector
+		#{&}-header {
+			border-bottom: 2px solid #000;
+
+			@at-root #{$cn}-branding {
+				font-style: italic;
+			}
+
+			@at-root #{$cn}-title {
+				font-size: 1.5rem;
+				padding-bottom: 0.2em;
+
+				a {
+					@extend %decoration;
+				}
+
+				&:after {
+					@extend %profit;
+				}
+			}
+		}
+
+		#{&}-footer {
+			border-top: 2px solid #000;
+			padding-top: 1rem;
+			text-align: center;
+
+			&:after {
+				@extend %profit;
+			}
+		}
+	}
+}
+
+.hentry {
+	border-top: 2px solid #000;
+	padding-top: $global-padding;
+
+	a {
+		color: $ancher-color;
+		&:hover {
+			background: #000;
+			color: #FFF;
+			text-decoration: none;
+		}
+
+		&:before {
+			content: '<<< ';
+			display: inline-block;
+		}
+
+		&:after {
+			content: ' >>>';
+			display: inline-block;
+		}
+	}
+
+	blockquote {
+		padding: 0 $global-padding $global-padding $global-padding;
+		
+		p:last-child { padding-bottom: 0; }
+	}
+}
+
+$boxSize: 3rem;
+
+ul.boxes {
+	display: flex;
+	justify-content: space-between;
+	padding: $global-padding;
+
+	li {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		background: lightyellow;
+		width: $boxSize;
+		height: $boxSize;
+		border-radius: 50%;
+		box-shadow: 0 0 1rem 0.4rem rgba(0,0,0, 0.3);
+		animation: slideDown 0.3s 1 both;
+	}
+}
+
+// loop 8 boxes from delay index ($i) * 0.15s
+@for $i from 1 through 8 {
+	ul.boxes li:nth-child(#{$i}) {
+		animation-delay: $i * 0.15s;
+	}
+}
+
+@keyframes slideDown {
+	from {
+		opacity: 0;
+		transform: translateY(-1 * $boxSize);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+

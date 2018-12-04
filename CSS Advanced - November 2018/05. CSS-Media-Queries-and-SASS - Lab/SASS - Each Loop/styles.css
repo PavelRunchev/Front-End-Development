@@ -1,0 +1,120 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+.site-title:after, .site-footer:after {
+  display: inline-block;
+  font-style: normal;
+  content: '&';
+  color: red; }
+
+.site-title a {
+  text-decoration: none;
+  color: orange; }
+
+body {
+  padding: 2rem; }
+
+.site {
+  max-width: 40rem;
+  margin: 0 auto; }
+  .site-header {
+    border-bottom: 2px solid #000; }
+    .site-branding {
+      font-style: italic; }
+    .site-title {
+      font-size: 1.5rem;
+      padding-bottom: 0.2em; }
+
+  .site-footer {
+    border-top: 2px solid #000;
+    padding-top: 1rem;
+    text-align: center; }
+
+.hentry {
+  border-top: 2px solid #000;
+  padding-top: 2rem; }
+  .hentry a {
+    color: lightgreen; }
+    .hentry a:hover {
+      background: #000;
+      color: #FFF;
+      text-decoration: none; }
+    .hentry a:before {
+      content: '<<< ';
+      display: inline-block; }
+    .hentry a:after {
+      content: ' >>>';
+      display: inline-block; }
+  .hentry blockquote {
+    padding: 0 2rem 2rem 2rem; }
+    .hentry blockquote p:last-child {
+      padding-bottom: 0; }
+
+ul.boxes {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem; }
+  ul.boxes li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    box-shadow: 0 0 1rem 0.4rem rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.3s 1 both; }
+
+ul.boxes li:nth-child(1) {
+  animation-delay: 0.15s; }
+
+ul.boxes li:nth-child(2) {
+  animation-delay: 0.3s; }
+
+ul.boxes li:nth-child(3) {
+  animation-delay: 0.45s; }
+
+ul.boxes li:nth-child(4) {
+  animation-delay: 0.6s; }
+
+ul.boxes li:nth-child(5) {
+  animation-delay: 0.75s; }
+
+ul.boxes li:nth-child(6) {
+  animation-delay: 0.9s; }
+
+ul.boxes li:nth-child(7) {
+  animation-delay: 1.05s; }
+
+ul.boxes li:nth-child(8) {
+  animation-delay: 1.2s; }
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+ul.boxes li:nth-child(1) {
+  background: #00FFFF; }
+
+ul.boxes li:nth-child(2) {
+  background: #FF00FF; }
+
+ul.boxes li:nth-child(3) {
+  background: lightgreen; }
+
+ul.boxes li:nth-child(4) {
+  background: tomato; }
+
+ul.boxes li:nth-child(5) {
+  background: #7FFFD4; }
+
+ul.boxes li:nth-child(6) {
+  background: #FF69B4; }
+
+ul.boxes li:nth-child(7) {
+  background: gold; }
+
+ul.boxes li:nth-child(8) {
+  background: deepskyblue; }
+
+/*# sourceMappingURL=styles.css.map */

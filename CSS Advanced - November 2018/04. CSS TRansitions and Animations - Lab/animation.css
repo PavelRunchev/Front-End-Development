@@ -1,0 +1,133 @@
+
+body {
+    background: lightcyan;
+    margin: 0;
+    padding: 4rem;
+}
+
+.box {
+    background: lightpink;
+    width: 10rem;
+    height: 10rem;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0, 0.7);
+    border-radius: 0.5rem;
+    margin-bottom: 4rem;
+    animation: slidein 3s ease infinite alternate;
+}
+
+.box-fill-mode {
+    background: lightgreen;
+    width: 10rem;
+    height: 10rem;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0, 0.7);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    animation: slidein 2.5s ease infinite;
+    animation-fill-mode: forwards;
+}
+
+.box-fill-mode1 {
+    background: yellow;
+    width: 10rem;
+    height: 10rem;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0, 0.7);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    animation: slid 3s ease-in-out infinite alternate;
+    animation-fill-mode: both;
+}
+
+.box-2 {
+    background: orange;
+    width: 10rem;
+    height: 10rem;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0, 0.7);
+    border-radius: 0.5rem;
+    margin-bottom: 4rem;
+    animation: demo 3s ease infinite alternate;
+}
+
+.box-3 {
+    background: purple;
+    width: 10rem;
+    height: 10rem;
+    box-shadow: 0 0 1rem 0 rgba(0,0,0, 0.7);
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    animation: trans 4s ease infinite alternate;
+}
+
+@keyframes slidein {
+    from {
+        transform: translateX(70rem) rotate(135deg);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) rotate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slid {
+    0% {
+        transform: translateX(0) rotate(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(35rem) rotate(360deg);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(70rem) rotate(90deg);
+        opacity: 1;
+    }
+}
+
+@keyframes demo {
+    0% {
+        transform: translateX(70rem) rotate(135deg);
+        opacity: 0;
+    }
+    35% {
+        transform: translateX(90rem) rotate(90deg);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateX(25rem) rotate(360deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(0) rotate(0);
+        opacity: 0;
+    }
+}
+
+@keyframes trans {
+    0% {
+        transform: translateX(0) rotate(0);
+        opacity: 0;
+    }
+    25% {
+        transform: translateX(20rem) rotate(360deg);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(40rem) rotate(720deg);
+        opacity: 0;
+    }
+
+    75% {
+        transform: translateX(60rem) rotate(1080deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(80rem) rotate(1460deg);
+        opacity: 0;
+    }
+}
