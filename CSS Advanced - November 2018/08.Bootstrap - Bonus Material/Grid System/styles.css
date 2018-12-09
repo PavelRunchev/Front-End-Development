@@ -1,0 +1,10 @@
+@import url('../node_modules/bootstrap/dist/css/bootstrap.min');
+
+
+body {
+    background: pink;
+}
+
+.header {
+    background: lightblue;
+}

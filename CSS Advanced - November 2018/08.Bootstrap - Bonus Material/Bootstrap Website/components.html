@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Components</title>
+    <link rel="icon" href="./images/bootstrap-logo.jpg" type="image/x-icon"/>
+    <link rel="shortcut icon" href="./images/bootstrap-logo.jpg" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid m-0 p-0">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">WELCOME TO BOOTSTRAP</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto pr-5">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="component.html">COMPONENTS <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <header class="bgimage">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h1 class="text-light">Components</h1>
+                        <p class="text-light mt-4">Over a dozen reusable components</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <div class="container m-auto">
+            <div class="row p-2">
+                <div class="col">
+                    <h3 class="pl-3">Components...</h3>
+                    <p class="col-10">Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype
+                        your ideas or build your entire app with our Sass variables and mixins, responsive grid system,
+                        extensive prebuilt components, and powerful plugins built on jQuery.</p>
+                </div>
+                <div class="col">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Dropdowns</li>
+                        <li class="list-group-item">Navs</li>
+                        <li class="list-group-item">Badges</li>
+                        <li class="list-group-item">Button Groups</li>
+                        <li class="list-group-item">Pagination</li>
+                        <li class="list-group-item">Jumbotron</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row p-4">
+                <div class="col">
+                    <div class="jumbotron bg-dark text-light">
+                        <h4>Dropdowns</h4>
+                        <p>Dropdowns are toggleable, contextual overlays for displaying lists of links and more.
+                            They’re made interactive with the included Bootstrap dropdown JavaScript plugin. </p>
+                        <button class="btn btn-outline-light">See more</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="jumbotron bg-light text-dark">
+                        <h4>Navs</h4>
+                        <p>Navigation available in Bootstrap share general markup and styles, from the base .nav class
+                            to the active and disabled states. Swap modifier classes to switch between each style.</p>
+                        <button class="btn btn-outline-dark">See more</button>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="jumbotron bg-dark text-light">
+                        <h4>Badges</h4>
+                        <p>Documentation and examples for badges, our small count and labeling component.
+                            Badges can be used as part of links or buttons to provide a counter.</p>
+                        <button class="btn btn-outline-light">See more</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row p-4">
+                    <div class="col">
+                        <div class="jumbotron bg-light text-dark">
+                            <h4>Buttons Groups</h4>
+                            <p>Combine sets of button groups into button toolbars for more complex components. 
+                                Use utility classes as needed to space out groups, buttons, and more.</p>
+                            <button class="btn btn-outline-dark">See more</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="jumbotron bg-dark text-light">
+                            <h4>Pagination</h4>
+                            <p>Pagination is built with list HTML elements so screen readers can announce the number of available links. 
+                                Use a wrapping element to identify it as a navigation section.</p>
+                            <button class="btn btn-outline-light">See more</button>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="jumbotron bg-light text-dark">
+                            <h4>Jumbotron</h4>
+                            <p>A lightweight, flexible component that can optionally extend the entire viewport to showcase key marketing messages on your site.
+                                To make the jumbotron full width.
+                            </p>
+                            <button class="btn btn-outline-dark">See more</button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid bg-dark">
+        <div class="row text-light p-3">
+            <p class="m-auto">&copy; 2018 Powered by Pavel Runchev learning in SoftUni</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

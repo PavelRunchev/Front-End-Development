@@ -1,0 +1,30 @@
+.bgimage {
+    width:100%;
+    height:250px;
+    background: url('../images/fisherman-wave.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    display: flex;
+    text-align: center;
+    align-items: center;
+  }
+  .bgimage h1 {
+    color:black;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px rgba(0,0,0, 1);
+  }
+
+  .bgimage p {
+      font-size: 24px;
+      text-shadow: 2px 2px 3px rgba(0,0,0, 1);
+  }
+
+  img {
+    width: 400px;
+    height: auto;
+  }
+
+  .container {
+    margin: 0 auto;
+  }

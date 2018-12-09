@@ -1,0 +1,23 @@
+
+import in html
+--------------
+online
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+
+local install in npm or download bootstrap
+----------------
+<script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+
+.container -> fixed width for each screen sizein bootstrap (xs,sm,md,lg).
+.container-fluid -> fill 100% width.
+
+Determines how many columns
+-----------------------------
+
+.col-xs: width less than 768px
+.col-sm: width between 768px and 992px
+.col-md: width between 992px and 1200px
+.col-lg: width over 1200px
