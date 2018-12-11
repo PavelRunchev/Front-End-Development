@@ -28,3 +28,10 @@
   .container {
     margin: 0 auto;
   }
+
+  a {
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+
