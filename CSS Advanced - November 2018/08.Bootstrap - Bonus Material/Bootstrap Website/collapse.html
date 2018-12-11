@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"></meta>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    ></meta>
+
+    <meta
+        http-equiv="X-UA-Compatible"
+        content="ie=edge"
+    ></meta>
+
+    <title>Collapse Bootstrap</title>
+
+    <link
+        rel="icon"
+        href="./images/bootstrap-logo.jpg"
+        type="image/x-icon"
+    ></link>
+
+    <link
+        rel="shortcut icon"
+        href="./images/bootstrap-logo.jpg"
+        type="image/x-icon"
+    ></link>
+
+    <link
+        rel="stylesheet"
+        href="./css/bootstrap.min.css"
+    ></link>
+
+    <link
+        rel="stylesheet"
+        href="./css/bootstrap-grid.min.css"
+    ></link>
+
+    <link
+        rel="stylesheet"
+        href="./css/bootstrap-reboot.min.css"
+    ></link>
+
+    <link
+        rel="stylesheet"
+        href="css/styles.css"
+    ></link>
+</head>
+
+<body>
+    <div class="container-fluid m-0 p-0">
+        <nav class="navbar navbar-expand-xl navbar-dark bg-dark">
+            <a
+                class="navbar-brand"
+                href="index.html"
+            >WELCOME TO BOOTSTRAP</a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div
+                class="collapse navbar-collapse"
+                id="navbarSupportedContent"
+            >
+                <ul class="navbar-nav ml-auto pr-5">
+                        <li class="nav-item active">
+                                <a class="nav-link" href="components.html">COMPONENTS <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="blog.html">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="collapse.html">COLLAPSE</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="socialButtons.html">SOCIAL BUTTONS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="sweetalert.html">SWEET ALERT</a>
+                            </li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="bgimage">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <h1 class="text-light">Bootstrap 4</h1>
+
+                        <p class="text-light mt-4">Front-end component library</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="container m-auto p-5">
+            <div class="jumbotron text-center">
+                <h2 class="text-danger">Title</h2>
+
+                <p>
+                    <a
+                        class="btn btn-outline-primary"
+                        data-toggle="collapse"
+                        href="#collapseExample"
+                        role="button"
+                    >Description</a>
+                </p>
+
+                <p class="text-info">Price: 25.99 $</p>
+
+                <div
+                    class="collapse"
+                    id="collapseExample"
+                >
+                    <div class="card card-body">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="accordion">
+                    <div class="card">
+                      <div class="card-header bg-info" id="headingOne">
+                        <h5 class="mb-0">
+                          <a class="btn btn-link text-light" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            HTML
+                          </a>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            Web browsers receive HTML documents from a web server or from local storage and render the documents into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header bg-info" id="headingTwo">
+                        <h5 class="mb-0">
+                          <a class="btn btn-link collapsed text-light" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            CSS
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                            CSS is designed to enable the separation of presentation and content, including layout, colors, and fonts. This separation can improve content accessibility, provide more flexibility and control in the specification of presentation characteristics, enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, and reduce complexity and repetition in the structural content.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header bg-info" id="headingThree">
+                        <h5 class="mb-0">
+                          <a class="btn btn-link collapsed text-light" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            BOOTSTRAP
+                          </a>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                            Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+        </main>
+
+        <footer class="container-fluid bg-dark">
+            <div class="row text-light p-3">
+                <p class="m-auto">
+                    &copy; 2018 Powered by Pavel Runchev learning in SoftUni
+                </p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
