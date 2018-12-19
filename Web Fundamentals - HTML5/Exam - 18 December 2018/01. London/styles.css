@@ -1,0 +1,77 @@
+@import url('https://use.fontawesome.com/releases/v5.6.0/css/all.css');
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+
+
+/* Box-sizing fix */
+* {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 60%;
+    display: flex;
+    color: #E50525;
+}
+
+.photo {
+    width: 59%;
+    
+}
+
+.photo > div {
+    display: flex;
+}
+
+.photo > div > article {
+    width: 65%;
+    margin: 0.5rem 1rem;
+    border: 1px solid gray;
+    border-radius: 1rem;
+    overflow: hidden;
+    
+}
+
+main >  .photo > article > img {
+    width: 100%;
+    height: auto;
+}
+
+.photo > div > article > p {
+    padding-left: 1rem;
+    font-weight: bold;
+}
+
+.services {
+    width: 33%;
+    padding-left: 2rem;
+}
+
+.services > h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.services > div {
+    font-size: 20px;
+    margin: 1rem 0;
+    font-weight: 600;
+}
+

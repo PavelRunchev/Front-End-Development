@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Toya Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>КАК ДА ВИ ПОМОГНЕМ?</h1>
+        <p>Попълнете полетата с информация по-долу и ние ще се свържем с Вас директно</p>
+    </header>
+    <main>
+        <section class="contacts">
+            <article class="address">
+                <h4>АДРЕС:</h4>
+                <p>кв.Подуяне,ул.Гълъбец</p>
+                <p>N28, гр.София</p>
+            </article>
+            <article class="works-time">
+                <h4>РАБОТНО ВРЕМЕ:</h4>
+                <p>Понеделник / Събота:</p>
+                <p>10.30 -19.00 ч.</p>
+            </article>
+            <article class="phone">
+                <h4>ТЕЛЕФОН ЗА ВРЪЗКА: </h4>
+                <p>02/87 34757</p>
+                <p>0887/80 31 87</p>
+            </article>
+            <article class="email">
+                <h4>Е-МАIL:</h4>
+                <p>to_ja@abv.bg</p>
+            </article>
+        </section>
+
+        <section class="form">
+            <article class="map">
+                <img src="images/map.jpg" alt="map">
+                <div>*на 10 минути пеша от <span class="station">Сточна гара</span> (подходящ градски </div>
+                <div>транспорт-<span class="bus">автобус 413</span> (Младост 4 - Централна Ж.П.Г)</div>
+            </article>
+            <article class="inner-form">
+                <form active="#" method="GET">
+                    <p class="fields">
+                        <div class="user">
+                            <label for="username">ПОТРЕБИТЕЛСКО ИМЕ</label>
+                            <input type="text" name="username" id="username" placeholder="Потребителско име">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div>
+                            <label for="email">E-MAIL</label>
+                            <input type="email" name="email" id="email" placeholder="E-mail">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                    </p>
+                    <p class="fields">
+                        <div class="user">
+                            <label for="password">ПАРОЛА</label>
+                            <input type="text" name="username" id="password" placeholder="********">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                         <div>
+                            <label for="repeat-password">ПОТВЪРДИ ПАРОЛА</label>
+                            <input type="email" name="email" id="repeat-password" placeholder="********">
+                             <i class="fas fa-lock"></i>
+                        </div>
+                    </p>
+                    <textarea id="message" placeholder="Съобщение*"></textarea>
+                    <button id="send">ИЗПРАТИ</button>
+                </form>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

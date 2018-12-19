@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+
+/* load url font awesome */
+@import url('https://use.fontawesome.com/releases/v5.6.1/css/all.css');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato' , sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 40%;
+}
+
+main > h2 {
+    border-bottom: 2px solid rgb(239,239,239);
+    padding-bottom: 1rem;
+}
+
+#dash {
+    width: 8%;
+    border: 2px solid rgb(252,169,0);
+    position: relative;
+    top: -1.4rem;
+}
+
+main p label {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 0.5rem 0;
+}
+
+main p input {
+    outline: none;
+    border: none;
+    padding: 1rem;
+    border: 3px solid rgb(239,239,239);
+    border-radius: 2px;
+}
+
+main p input::-webkit-input-placeholder {
+    font-size: 18px;
+    color: rgb(153,153,153);
+}
+
+main p input:-moz-placeholder {
+    font-size: 18px;
+    color: rgb(153,153,153);
+}
+
+main p input::-moz-placeholder {
+    font-size: 18px;
+    color: rgb(153,153,153);
+}
+
+main p input::-ms-input-placeholder {
+    font-size: 18px;
+    color: rgb(153,153,153);
+}
+
+main p:nth-of-type(1) > label {
+    display: block;
+}
+
+main p:nth-of-type(1) > input {
+    width: 100%;
+}
+
+main p input:focus {
+    border-color: rgb(252,169,0);
+}
+
+/* INPUT ROW 2 */
+main p:nth-of-type(2) {
+    display: flex;
+    justify-content: space-between
+}
+main p:nth-of-type(2) > span {
+    display: inline-block;
+    width: 47%;
+}
+
+main p:nth-of-type(2) span > label {
+    display: block;
+}
+
+main p:nth-of-type(2) span > input {
+    width: 100%;
+}
+
+.right-fragile > span {
+    position: relative;
+    color: rgb(252,169,0);
+    font-weight: bold;
+    font-size: 20px;
+    top: -2.5rem;
+    left: 20rem;
+}
+
+/* INPUT ROW 3 */
+main p:nth-of-type(3) {
+    display: flex;
+    justify-content: space-between;
+}
+
+main p:nth-of-type(3) > span {
+    width: 30%;
+}
+
+main p:nth-of-type(3) > span > input {
+    width: 100%;
+}
+
+/* INPUT ROW 4 (TYPE RADIO) */
+
+main p:nth-of-type(4) {
+    display: flex;
+    justify-content: space-between
+}
+
+main p:nth-of-type(4) > span {
+    font-weight: bolder;
+    font-size: 18px;
+    
+}
+
+main p:nth-of-type(4) input {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    font-size: 8px;
+    width: 10px;
+    height: 10px;
+    outline: none;
+    position: relative;
+    top: 0.2rem;
+    padding: 0.4rem;
+    border-radius: 50%;
+    transition: 0.2s all linear;
+    border: 3px solid rgb(252,169,0);
+    margin-right: 0.7rem;
+}
+
+main p:nth-of-type(4) input:checked {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    font-size: 8px;
+    width: 10px;
+    height: 10px;
+    outline: none;
+    position: relative;
+    top: 0.2rem;
+    padding: 0.4rem;
+    border-radius: 50%;
+    transition: 0.2s all linear;
+    background: rgb(252,169,0);
+}
+
+/* main p:nth-of-type(4) > span:nth-of-type(1) { margin-right: 7rem; } */
+
+
+/* TOTAL & PRICE */
+.total-price {
+    padding: 2rem 0;
+    border-top: 3px solid rgb(239,239,239);
+    border-bottom: 3px solid rgb(239,239,239);
+}
+
+.total-price > .total {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.total-price > .price {
+    font-weight: bold;
+    font-size: 24px;
+    color: rgb(252,169,0);
+    float: right;
+}

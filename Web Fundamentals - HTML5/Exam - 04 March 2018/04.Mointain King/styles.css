@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+
+@import url('https://use.fontawesome.com/releases/v5.6.0/css/all.css');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(255,255,255,0.2), rgba(0,0,0,0.5)), 
+    url('./img/background-header.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: center;
+    background-size: cover;
+    text-align: center;
+    padding: 10rem 0 8rem 0;
+}
+
+header > img {
+    width: 10%;
+    float: left;
+    position: relative;
+    top: -8rem;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+    padding-left: 1.5rem;
+
+}
+
+header > h3 {
+    font-size: 48px;
+    font-weight: 200;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px rgba(255,255,255,0.5);
+    position: relative;
+    right: 5rem;
+}
+
+header > h1 {
+    font-size: 72px;
+    margin: 0 0 7rem 0;
+    text-shadow: 2px 2px rgba(255,255,255,0.5);
+    position: relative;
+    right: 5rem;
+}
+
+header > p {
+    font-style: italic;
+    font-size: 30px;
+    font-weight: 300;
+    color: #000;
+    margin: 0.3rem 0;
+    text-shadow: 2px 2px rgba(255,255,255,0.5);
+}
+
+header p:nth-of-type(2) {
+    margin-bottom: 5rem;
+}
+
+header > .buttons > button {
+    cursor: pointer;
+    outline: none;
+    border: none;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    color: #fff;
+    margin: 1.5rem;
+    font-size: 20px;
+}
+
+.buttons > #learn-more {
+    background: #332E62;
+}
+
+.buttons > #download {
+    background: #F42257;
+}
+
+
+/* Section Consectetur */
+
+.consectetur {
+    display: flex;
+    justify-content: center;
+}
+
+.consectetur > article {
+    width: 23%;
+    text-align: center;
+    padding: 4rem 0.5rem;
+}
+
+.consectetur > article > i {
+    color: #C17F3F;
+    font-size: 40px;
+    padding: 1.5rem;
+    border: 2px solid #C17F3F;
+    border-radius: 50%;
+}
+
+.consectetur > article > .fa-dollar-sign {
+    padding: 1.5rem 2rem;
+}
+
+.consectetur > article > h4 {
+    font-style: italic;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.consectetur > article > p {
+    font-size: 16px;
+}
+
+/* Section Moon */
+
+.moon {
+    background: url('./img/moon.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 25%;
+    padding: 0 0 3rem 12rem;
+    height: 60vh;
+}
+
+.moon > article {
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+    /* support Browser Edge*/
+    background: -ms-linear-gradient(#000 100%, #000 100%);
+    width: 28%;
+    height: 52vh;
+    border: 1px solid #C58741;
+    color: #fff;
+    padding: 2rem 2.2rem 3rem 2.2rem;
+    text-align: center;
+    position: relative;
+}
+
+.moon > article > h3 {
+    font-style: italic;
+    font-size: 34px;
+}
+
+.moon > article > p {
+    font-size: 16px;
+}
+
+.moon > article > p:nth-of-type(1) {
+    font-size: 14px;
+    margin: 2rem 0;
+}
+
+.moon article .buttons-clients > button {
+    background: linear-gradient(to right, rgba(255,171,81,1),rgba(255,222,88,1));
+    background: -ms-linear-gradient(to right, rgba(255,171,81,1) 100%,rgba(255,222,88,1) 100%);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 3.2rem 2rem;
+    margin: 6rem 3rem 0 3rem;
+}
+
+
+
+/*  FOOTER */
+
+footer {
+    background: rgb(4,4,14);
+    color: #fff;
+    padding: 1.5rem 2rem 1.5rem 4rem;
+}
+
+footer div:nth-of-type(1),
+footer div:nth-of-type(2) {
+    display: inline-block;
+}
+
+footer > div > #softuni { color: #C17F3F; }
+
+footer > .icons { 
+    position: relative;
+    top: -0.5rem;
+    float: right; 
+}
+
+footer > .icons > i { margin: 0 0.5rem; }
+
+footer > .icons > .fa-facebook-f {
+    color: rgb(0,1,205);
+}
+
+footer > .icons > .fa-twitter {
+    color: rgb(0,191,255);
+    border: 1px solid rgb(0,191,255);
+    padding: 0.4rem;
+    border-radius: 50%;
+}
+
+footer > .icons > .fa-instagram {
+    color: rgb(117,48,157);
+    border: 1px solid rgb(117,48,157);
+    padding: 0.4rem;
+    border-radius: 50%;
+}
+

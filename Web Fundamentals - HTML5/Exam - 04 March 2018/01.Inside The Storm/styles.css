@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Oxygen');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    font-family: 'Oxygen', sans-serif;
+    background: rgb(211,211,211);
+}
+
+.first-row,
+.second-row,
+.third-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 32.8vh;
+}
+
+/* First Row */
+
+.first-row > .first-col {
+    width: 33.35%;
+    height: 32.8vh;
+}
+
+.first-row > .first-col > img {
+    width: 100%;
+    height: 32.8vh;
+}
+
+.first-row > .second-col {
+    width: 33.35%;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.first-row > .second-col > p {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.first-row > .second-col > p:nth-of-type(1) {
+    margin-bottom: 0.5rem;
+}
+
+.first-row > .second-col > p:nth-of-type(2) {
+    margin-top: 0.5rem;
+}
+
+.first-row > .second-col > .help {
+    font-size: 30px;
+    border-top: 2px dotted #FC0100;
+    border-bottom: 2px dotted #FC0100;
+}
+
+.first-row > .third-col {
+    width: 33.35%;
+    height: 32.8vh;
+}
+
+.first-row > .third-col > img {
+    width: 100%;
+    height: 32.8vh;
+}
+
+/* Second Row */
+
+.first-row,
+.second-row,
+.third-row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 32.8vh;
+}
+
+.second-row {
+    border-top: 5px solid rgb(211,211,211);
+    border-bottom: 5px solid rgb(211,211,211);
+}
+
+.second-row > .first-col {
+    width: 33.35%;
+    text-align: left;
+    padding: 0 3rem;
+}
+
+.second-row > .first-col > p {
+    font-size: 30px;
+    margin-top: 2rem;
+}
+
+.second-row > .second-col {
+    background-image: url('./images/Ivo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.35%;
+}
+
+.second-row > .third-col {
+    width: 33.35%;
+    text-align: center;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-row > .third-col > p {
+    color: #FC0100;
+    font-size: 40px;
+    font-weight: bold;
+
+}
+
+/* Third Row */ 
+
+.third-row > .first-col {
+    width: 33.35%;
+    height: 32.8vh;
+}
+
+.third-row > .first-col > img {
+    width: 100%;
+    height: 32.8vh;
+}
+
+.third-row > .second-col {
+    width: 33.35%;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.third-row > .second-col > h3 {
+    color: #3B3BCE;
+    font-size: 30px;
+    margin: 3rem 0;
+}
+
+.third-row > .second-col > button {
+    cursor: pointer;
+    padding: 1.5rem 2rem;
+    background: #F4A361;
+    color: #fff;
+    font-size: 30px;
+}
+
+.third-row > .third-col {
+    width: 33.35%;
+    height: 32.8vh;
+}
+
+.third-row > .third-col > img {
+    width: 100%;
+    height: 32.8vh;
+}

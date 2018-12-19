@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Francois+One:300,400,600,700,800");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,800,900");
+@import url("https://use.fontawesome.com/releases/v5.4.2/css/all.css");
+
+body {
+   font: 16px/1.5 'Source Sans Pro', sans-serif; 
+   background: rgb(244,252,255);
+   margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
+    margin: 0.5rem auto;
+    color: rgb(117,116,120);
+    text-align: left;
+}
+
+form header {
+    display: block;
+}
+
+form header h1 {
+
+    font-family: "Francois One", sans-serif;
+    font-size-adjust:0.5;
+    font-size: 70px;
+    border-bottom: 4px solid rgb(49,212,125);
+    color: rgb(0,44,60);
+    padding-top: 2rem;
+    margin-bottom: 0;
+}
+
+form label {
+    display: block;
+    width: 29.4rem;
+}
+
+form .star {
+    color: rgb(244,23,101);
+    padding-right: 0.3rem;
+}
+
+form label i {
+    color: #000;
+    position: relative;
+    top: 2.5rem;
+    padding: 0.6rem 0.8rem 0.6rem 0.8rem;
+    text-align: left;
+    border-right: 2px solid rgb(181,214,226);
+    z-index: 5;
+
+}
+
+form label .paragraph {
+    margin-bottom: 0.4rem;
+    text-align: left;
+    position: relative;
+    top: 2.5rem;
+}
+
+form label .paragraph .password {
+    color: rgb(183,205,223);
+}
+
+form label input {
+    display: block;
+    padding: 0.8rem 0;
+    outline: none;
+    border: 2px solid rgb(181,214,226);
+    border-radius: 0.1rem;
+    padding-left: 4rem;
+    z-index: 2;
+    width: 23.8rem;
+}
+
+form label input::-webkit-input-placeholder {
+    font-size: 16px;
+}
+
+form label input::-moz-placeholder {
+    font-size: 16px;
+}
+
+form label input:-ms-input-placeholder{
+    font-size: 16px;
+}
+
+form #submit {
+    background: rgb(49,212,125);
+    color: rgb(255,255,252);
+    padding: 0.8rem 1.6rem;
+    font-size: 18px;
+    border: none;
+    border-radius: 0.3rem;
+    margin-top: 1.5rem;
+    float: right;
+    position: relative;
+    cursor: pointer;
+}
+form #submit:hover {
+    background: #FFF;
+    color: rgb(49,212,125);
+    border: 2px solid rgb(49,212,125);
+}
+

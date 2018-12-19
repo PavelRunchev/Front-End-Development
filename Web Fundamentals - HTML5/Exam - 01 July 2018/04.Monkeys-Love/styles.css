@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i");
+
+@import url("https://use.fontawesome.com/releases/v5.6.1/css/all.css");
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+}
+
+nav ul { margin: 0; }
+
+nav li {
+    display: inline-block;
+    list-style: none;
+    padding: 1.5rem;
+}
+
+nav li a {
+    text-decoration: none;
+    color: rgb(240,95,64);
+    font-weight: bold;
+}
+
+/* Header */
+header {
+    background: url('./img/header.png');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    padding: 5rem 15rem 17rem 15rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 0;
+}
+
+#header-dash {
+    display: inline-block;
+    width: 5%;
+    border-bottom: 2px solid rgb(240,95,64);
+    text-align: center;
+}
+
+header p {
+    font-size: 14px;
+}
+
+.find-monkeys {
+    background: rgb(240,95,64);
+    color: #fff;
+    text-align: center;
+    padding: 4rem 35rem;
+}
+
+.find-monkeys h2 {
+    margin: 0;
+    font-weight: 400;
+}
+
+.find-monkeys .find-dash {
+    display: inline-block;
+    width: 5%;
+    border-bottom: 2px solid #fff;
+    text-align: center;
+}
+
+.find-monkeys #find{
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0.7rem 1rem;
+    color: #000;
+    background: #fff;
+    border-radius: 1.5rem;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.services {
+    text-align: center;
+}
+
+.services h2 {
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 3rem;
+}
+
+.services-dash {
+    display: inline-block;
+    width: 4%;
+    border-bottom: 2px solid rgb(240,95,64);
+    text-align: center;
+}
+
+.inner-services {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.inner-services article {
+    width: 18%;
+    padding: 2rem 1rem;
+}
+
+.inner-services i {
+    color: rgb(240,95,64);
+    font-size: 36px;
+}
+
+.inner-services h4 {
+    font-weight: 400;
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px solid rgb(240,95,64);
+    border-bottom: 2px solid rgb(240,95,64);
+}
+
+.gallery img {
+    width: 30%;
+    height: 350px;
+    border-left: 2px solid rgb(240,95,64);
+    border-right: 2px solid rgb(240,95,64);
+}
+
+
+footer {
+    text-align: center;
+}
+
+footer .monkeyUni {
+    color: rgb(240,95,64);
+}

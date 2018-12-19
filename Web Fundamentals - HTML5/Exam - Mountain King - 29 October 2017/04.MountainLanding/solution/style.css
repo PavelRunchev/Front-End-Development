@@ -1,0 +1,241 @@
+@import url("reset.css");
+@import url("typography.css");
+
+p {
+    color: rgb(198,197,199);
+}
+
+header {
+    background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0, 0.3)), url("../images/header.jpg") , no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 1rem;
+    font-size: 14px;
+}
+
+header #logo {
+    width: 4%;
+    text-align: left;
+    display: inline-block;
+}
+
+header nav ul li a,
+header .header,
+header .header > a {
+    color: rgb(243,242,242);
+    text-decoration: none;
+}
+
+header nav {
+    width: 100%;
+}
+
+header nav ul {
+    margin: 0 0 0 auto;
+    width: 45%;
+    text-align: right;
+    float: right;
+    padding-right: 5rem;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0.5rem;
+}
+
+header .header {
+    width: 50%;
+    padding:  9rem 2rem 8rem 10rem;
+    text-align: center;
+    margin: 0 auto;
+}
+
+header .header h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+header .header #first-paragraph {
+    padding-top: 1rem;
+}
+
+header .header #last-paragraph {
+    padding-bottom: 3rem;
+}
+
+header .header a {
+    padding: 0.4rem 1.2rem;
+    background: rgb(202,188,154);
+    border-radius: 0.2rem;
+    margin: 1rem 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+/*
+/* SECTION ABOUT_US
+*/
+
+#about-us {
+    text-align: center;
+    padding: 2rem 10%;
+}
+
+#about-us h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+.italic {
+    font-style: italic;
+    padding-bottom: 4rem;
+}
+
+/*
+/* SECTION SERVICES
+*/
+
+#services {
+    width: 100%;
+    background: rgb(246,246,246);
+    text-align: center;
+}
+
+#services article {
+    display: inline-block;
+    width: 33%;
+    padding: 2rem;
+    text-align: center;
+}
+
+#services article img {
+    width: 30%;
+}
+
+#services article h6 {
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(86,86,86);
+}
+
+#services article p {
+    font-size: 12px;
+}
+
+/*
+/* SECTION TEAM
+*/
+
+#team {
+    text-align: center;
+    padding: 2rem;
+}
+
+#team h1,
+#team article h6 {
+    text-transform: uppercase;
+    color: rgb(86,86,86);
+    margin-bottom: 0;
+}
+
+#team h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+#team .italic {
+    padding-bottom: 2rem;
+}
+
+#team article {
+    width: 18%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 1rem;
+}
+
+#team article img {
+    max-width: 100%;
+    width: 80%;
+    border-radius: 0.2rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+}
+
+#team article h6 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#team article p {
+    font-size: 16px;
+}
+
+/*
+/* SECTION BLOG
+*/
+
+#blog {
+    background: rgb(246,246,246);
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+#blog h1,
+#blog article h6 {
+    text-transform: uppercase;
+    color: rgb(86,86,86);
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+#blog article {
+    display: inline-block;
+    width: 45%;
+    height: 400px;
+    margin: 1rem;
+    background: rgb(255,255,255);
+    border-radius: 0.2rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+
+}
+
+#blog article img {
+    max-width: 100%;
+    width: 50%;
+    height: 400px;
+    text-align: left;
+    float: left;
+    overflow-y: auto;
+}
+
+#blog article h6,
+#blog article p {
+    padding: 1rem 2rem;
+    text-align: left;
+    position: relative;
+    left: 2rem;
+    margin-right: 2rem;
+}
+
+#blog .blog-text {
+    padding-left: 20rem;
+    padding: 2rem 0;
+}
+
+#blog article h6 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 2rem;
+}
+
+#blog article p {
+    font-size: 18px;
+    line-height: 2;
+}
+
+
+
+
+
+

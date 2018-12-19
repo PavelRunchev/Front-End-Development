@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+@import url('https://use.fontawesome.com/releases/v5.6.1/css/all.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, rgba(159,104,91,1), rgba(241,222,189,1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 50%;
+    height: auto;
+    background: #fff;
+    padding: 6rem 0;
+    display: flex;
+    border-radius: 1rem;
+}
+
+article { width: 50%; }
+.image { text-align: center; }
+.image > img { width: 70%; }
+
+.form h2 {
+    font-weight: 400;
+    margin-left: 3rem;
+}
+
+.form form > p {
+    position: relative;
+}
+
+.form form p > input {
+    outline: none;
+    border: none;
+    padding: 1rem 1rem 1rem 4rem;
+    background: rgb(230,230,230);
+    color: rgb(102,102,102);
+    border-radius: 1.4rem;
+}
+
+#radio-buttons { margin: 1rem 0; }
+
+.fa-envelope,
+.fa-lock {
+    font-size: 16px;
+    color: rgb(102,102,102);
+    position: relative;
+    right: 14rem;
+}
+
+#radio-buttons div > span {  color: rgb(170,170,170); }
+
+#radio-buttons div > .circle { 
+    margin-left: 1.4rem; 
+    margin-right: 0.5rem;
+    font-weight: 600;
+    color: rgb(170,170,170);
+    font-size: 32px;
+    position: relative;
+    top: 0.3rem;
+}
+
+#button {
+    border: none;
+    outline: none;
+    background: rgb(142,107,82);
+    padding: 1rem 3rem;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 1.4rem;
+}
+
+#button:hover {
+    background: rgb(94,71,54);
+}
+
+.forgot {
+    color: rgb(170,170,170);
+    font-size: 12px;
+    margin: 0.8rem 0 0 2rem;
+}
+
+.forgot > a,
+.create-account > a { color: rgb(102,102,104); }
+
+.create-account {
+    color: rgb(170,170,170);
+    font-size: 12px;
+    
+}
+
+.create-account { margin: 2rem 0 0 3rem; }
+
+.fa-long-arrow-alt-right {
+    color: rgb(102,102,102);
+}

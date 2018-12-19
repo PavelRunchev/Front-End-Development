@@ -1,0 +1,32 @@
+/* MAKE WEB RESPONSIVE AGAIN */
+
+@media screen and (max-width: 991px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .main_menu_bg {
+        display: none;
+    }
+
+    .col-sm-6 {
+        width: 100%;
+    }
+
+    .contact .btn_bg a {
+        display: none;
+    }
+
+    .contact_socail_bookmark {
+        display: none;
+    }
+
+    .separator {
+        margin-bottom: 6rem;
+    }
+
+    #contact > div > div:nth-child(2) > div > div:nth-child(2) {
+        display: none;
+    }
+}

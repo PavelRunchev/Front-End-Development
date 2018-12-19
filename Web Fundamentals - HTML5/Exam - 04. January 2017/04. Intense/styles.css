@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Header */
+
+header {
+    background: url('./images/bg-01-1920x908.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+
+header .logo {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem 1rem 4rem;
+}
+
+header .logo > #tickets {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0.7rem 2rem;
+    background: #FF4514;
+    border-radius: 0.6rem;
+    color: #fff;
+    font-size: 18px;
+}
+
+header > h1 {
+    font-size: 50px;
+    font-weight: normal;
+    letter-spacing: 0.5rem;
+    margin: 8rem 0 15rem 0;
+}
+
+header p:nth-of-type(1),
+header p:nth-of-type(2) {
+    font-size: 24px;
+    letter-spacing: 0.1rem;
+}
+
+header p:nth-of-type(2) {
+    margin-bottom: 3rem;
+}
+
+header .buttons {
+    margin: 2rem 0 5rem 0;
+}
+
+header .buttons > button:nth-of-type(1) {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 1rem 3.5rem;
+    background: #FF4514;
+    border-radius: 0.8rem;
+    color: #fff;
+    margin: 2rem 1rem 10rem 0;
+    font-size: 20px;
+}
+
+header .buttons > button:nth-of-type(2) {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 1rem 3.5rem;
+    border: 1px solid #FF4514;
+    border-radius: 0.8rem;
+    color: #fff;
+    margin: 2rem 1rem 10rem 0;
+    background: none;
+    font-size: 20px;
+}
+
+/* Section Learning */
+
+.learning { text-align: center; }
+
+.learning .inner-learning {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem 2rem;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.learning > h2 { font-size: 36px; }
+.learning .inner-learning > article { width: 17%; }
+.learning .inner-learning > article > img { margin-bottom: 2.5rem; }
+.learning .inner-learning > article > h4 {
+    font-weight: normal;
+    font-size: 20px;
+    
+}
+
+.learning .inner-learning > article > p:nth-of-type(1) { font-weight: bold; }
+
+/* Section  Speakers */
+
+.speakers { text-align: center; }
+.speakers > h2 { font-size: 36px; }
+.speakers > p { margin-bottom: 3rem; }
+
+.speakers .developers {
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 4rem 2rem;
+    text-align: center;
+    padding: 0 3rem;
+}
+
+.speakers .developers article { width: 17%; }
+.speakers .developers article > img { border-radius: 50%; }
+
+.speakers .developers article > h4 {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+.speakers .developers article > h5 {
+    font-weight: normal;
+    color: #FF4514;
+    font-size: 18px;
+}
+
+/* Footer  */
+
+footer {
+    background: rgb(25,25,25);
+    padding: 2rem 0 0 4rem;
+}
+
+footer .footer {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+
+footer .footer .contacts > h5 {
+    font-style: italic;
+    font-size: 16px;
+}
+
+footer .footer .contacts > p,
+footer .footer .contacts > div {
+    font-style: italic;
+    color: rgb(125,123,123);
+    font-size: 18px;
+}
+
+footer .footer .people-say {
+    width: 38%;
+    padding-right: 12rem;
+}
+
+footer .footer .people-say > h3 {
+    font-size: 26px;
+    font-weight: 600;
+}
+
+footer .footer .people-say p > .author {
+    margin-left: 4rem;
+    font-size: 28px;
+    font-style: italic;
+    color: rgb(125,123,123);
+    position: relative;
+    float: right;
+    left: 12rem;
+}
+
+footer .copyright {
+    text-align: center;
+    color: rgb(125,123,123);
+    padding: 1rem 0;
+}

@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://use.fontawesome.com/releases/v5.6.0/css/all.css');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(233,233,233);
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    width: 45%;
+    height: 500px;
+    border-radius: 0.2rem;
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.4);
+    overflow: hidden;
+}
+
+#title {
+    display: block;
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)), 
+    url('./images/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 500px;
+    text-align: center;
+    color: #fff;
+}
+
+#title #university{
+    text-align: left;
+    margin: 1rem 0 10rem 1.5rem;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#title h1 {
+    font-weight: 300;
+    margin-bottom: 0;
+    font-size: 32px;
+}
+
+#title h4 {
+    font-weight: 200;
+    margin-top: 0;
+    font-size: 24px;
+    margin-bottom: 10rem;
+}
+
+#title .icons i {
+    margin: 0 0.3rem;
+}
+
+#form {
+    display: inline-block;
+    width: 50%;
+    height: 500px;
+    background: rgb(250,250,250);
+    
+}
+
+#form form {
+    display: block;
+    padding: 2.5rem;
+}
+
+#form > form > p { margin-top: 0; }
+
+#form > form > p > label {
+    display: block;
+    font-size: 16px;
+    color: lightgray;
+    padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+#form > form > p > input {
+    width: 90%;
+    background: rgb(250,250,250);
+    border: none;
+    outline: none;
+    border-bottom: 1px solid darkgray;
+    padding: 0.5rem 0.5rem 0.5rem 0.8rem;
+}
+
+#form form p input::-webkit-input-placeholder { font-size: 18px; }
+
+#form form p input::-moz-placeholder { font-size: 18px; }
+
+#form form p input:-moz-placeholder { font-size: 18px; }
+
+#form form p input:-ms-input-placeholder { font-size: 18px; }
+
+#form > form > p > #password::-webkit-input-placeholder ,
+#form > form > p > #repeat-password::-webkit-input-placeholder {
+    font-size: 26px;
+    color: darkgray;
+}
+
+#form > form > span > .button {
+    border: none;
+    padding: 0.8rem 2.5rem;
+    background: rgb(15,15,15);
+    color: #fff;
+    border-radius: 5rem;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 1rem;
+    margin-top: 2rem;
+    font-weight: bold;
+}
+
+#form > form > span > .button:hover {
+    background: #fff;
+    color: rgb(15,15,15);
+    border: 1px solid rgb(15,15,15);
+}
+
+#form > form > span > a { color: #9FA1A7; }
+

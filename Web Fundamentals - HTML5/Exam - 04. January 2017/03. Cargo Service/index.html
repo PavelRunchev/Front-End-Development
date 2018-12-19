@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cargo Service</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <main>
+        <h2>BASIC CALCULATED FIELDS SAMPLE.</h2>
+        <div id="dash"></div>
+        
+
+        <form action="" method="GET">
+            <p class="filed">
+                <label for="distance">DISTANCE (MI)*</label>
+                <input type="text" id="distance" placeholder="Enter Distance">
+            </p>
+
+            <p class="field">
+                <span class="left-weight">
+                    <label for="weight">WEIGHT (LB)</label>
+                    <input type="text" id="weight" placeholder="Enter Weight">
+                </span>
+                <span class="right-fragile">
+                    <label for="fragile">FRAGILE</label>
+                    <input type="text" id="fragile" placeholder="No">
+                    <span class="fas fa-angle-down"></span>
+                </span>
+            </p>
+
+            <p class="field">
+                <span>
+                    <label for="length">LENGTH (IN)</label>
+                    <input type="number" id="length" placeholder="Length">
+                </span>
+                <span>
+                    <label for="height">HEIGHT (IN)</label>
+                    <input type="number" id="height" placeholder="height">
+                </span>
+                <span>
+                    <label for="width">WIDTH (IN)</label>
+                    <input type="number" id="width" placeholder="10">
+                </span>
+            </p>
+
+            <p class="field">
+                <label for="services">EXTRA SERVICES:</label>
+                
+                <span><input type="radio" name="services" id="insurance" value="Insurance" checked>Insurance</span>
+                
+                <span><input type="radio" name="services" id="express-delivery" value="Express Delivery"> Express Delivery</span>
+            </p>
+            <p class="total-price">
+                <span class="total">TOTAL:</span>
+                <span class="price">$ 00.00</span>
+            </p>
+        </form>
+    </main>
+</body>
+</html>

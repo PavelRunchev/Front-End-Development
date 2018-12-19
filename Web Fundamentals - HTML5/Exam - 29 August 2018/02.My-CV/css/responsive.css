@@ -1,0 +1,240 @@
+/*TODO:*/
+
+@media screen and (min-width: 768px) and (max-width: 1028px) {
+    #main { display: block; }
+
+    aside {
+        width: 100%;
+        display: inline-block;
+        margin: 0;
+    }
+
+    aside img {
+        max-width: none;
+        width: 30%;
+        height: 300px;
+        border-radius: 50%;
+        margin: 5% 7% 5% 23%;
+        -webkit-box-shadow: 0px 5px 15px -1px rgba(0,0,0,0.5);
+        -moz-box-shadow: 0px 5px 15px -1px rgba(0,0,0,0.5);
+        box-shadow: 0px 5px 15px -1px rgba(0,0,0,0.5);
+    }
+
+    #personal-info {
+        display: inline-block;
+        position: relative;
+        bottom: 5rem;
+    }
+
+    #personal-info > hr {
+        color: #fff;
+    }
+
+    .inner-progress-bar {
+        color: #009688;
+    }
+
+    /* MAIN */
+
+    main {
+        width: 100%;
+    }
+
+    #work {
+        margin-top: 3.2%;
+        padding: 50px 40px;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding-right: 6rem;
+    }
+
+    #work > article:nth-child(2) > p,
+    #work > article:nth-child(3) > p,
+    #work > article:nth-child(4) > p {
+        font-size: 18px;
+    }
+
+    #education {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 2rem;
+    }
+
+    #education h2 {
+        margin-left: 1rem;
+    }
+
+    #education h4 {
+        font-size: 36px;
+    }
+
+    .school {
+        width: 91%;
+        margin: 2% auto;
+    }
+
+    .school div {
+        display: inline-block;
+        text-align: center;
+        color: #757575;
+        border-radius: 12px;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .school div img {
+        width: 60%;
+        height: 40%;
+        margin: 6%;
+    }
+
+    .school div p {
+        font-size: 22px;
+        text-align: left;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+@media screen and (max-width: 767px) {
+    #main { 
+        display: block; 
+        width: 100%;
+        text-align: center;
+    }
+
+    aside {
+        width: 90%;
+        margin: 5%;
+    }
+
+    #main > aside > img {
+        width: 94%;
+        max-width: none;
+        margin: 5% 2%;
+    }
+
+    .hr { display: none; }
+
+    #personal-info {
+        text-align: left;
+        padding-left: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    #skills,
+    #languages {
+        text-align: left;
+        padding-left: 2rem;
+        margin-bottom: 0;
+    }
+
+    #skills > div > div,
+    #languages > div > div {
+        color: #009688;
+    }
+
+    /* MAIN */
+
+    main {
+        width: 90%;
+        margin: 0 5%;
+    }
+
+    main > #work,
+    main > #education {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 5%;
+        text-align: left;
+    }
+
+    main > #work {
+        padding: 2rem 3rem;
+    }
+
+    main > #education > h2 {
+        margin-left: 1rem;
+    }
+
+    main > #education > article:nth-child(2) > div {
+        text-align: center;
+    }
+
+    main > #education > article:nth-child(2) > h4 {
+        font-size: 32px;
+    }
+
+    main > #education > article:nth-child(2) > div > .uni-img-container {
+        float: none;
+        background: none;
+        text-align: center;
+        width: 40%;
+    }
+
+    main > #education > article:nth-child(2) > div > .uni-img-container > img {
+        display: block;
+    }
+
+    #education > article:nth-child(2) {
+        width: 87%;
+        margin: 0 auto;
+        margin-bottom: 0.5rem;
+    }
+
+    main > #education > article:nth-child(2) > div > p {
+        font-size: 22px;
+        text-align: left;
+        padding: 0 1rem;
+    }
+
+    
+
+
+
+    main > #education > article:nth-child(3) > div {
+        text-align: center;
+    }
+
+    main > #education > article:nth-child(3) > h4 {
+        font-size: 32px;
+    }
+
+    main > #education > article:nth-child(3) > div > .uni-img-container {
+        float: none;
+        background: none;
+        text-align: center;
+        width: 40%;
+    }
+
+    main > #education > article:nth-child(3) > div > .uni-img-container > img {
+        display: block;
+    }
+
+    #education > article:nth-child(3) {
+        width: 87%;
+        margin: 0 auto;
+        margin-bottom: 0.5rem;
+    }
+
+    main > #education > article:nth-child(3) > div > p {
+        font-size: 22px;
+        text-align: left;
+        padding: 0 1rem;
+    }
+
+    #education > article:nth-child(3) {
+        width: 87%;
+        margin: 0 auto;
+        margin-bottom: 2.5rem;
+    }
+
+}

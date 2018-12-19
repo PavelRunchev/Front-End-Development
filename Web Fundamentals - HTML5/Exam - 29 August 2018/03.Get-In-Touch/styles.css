@@ -1,0 +1,111 @@
+/*
+/*link to font Montserrat
+*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i');
+/*
+/* Link to Font Awesome
+*/
+@import url('https://use.fontawesome.com/releases/v5.6.1/css/all.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(rgba(132,106,221,0.8), rgba(132,106,221,0.8)),
+    url('./images/bg-01.jpg');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    width: 40%;
+    background: #fff;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+main section {
+    width: 50%;
+}
+
+main section#image {
+    text-align: center;
+    margin: auto 0;
+}
+
+main section#image > img {
+    width: 50%;
+}
+
+main section#form {
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+main section#form form > p {
+    width: 80%;
+}
+
+main section#form form p > input {
+    width: 63%;
+    border: none;
+    outline: none;
+    background: rgb(230,230,230);
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+}
+
+/* color placeholder with all browsers */
+main section#form form p > input::-webkit-input-placeholder { color: rgb(170,170,170); font-size: 12px;}
+main section#form form p > input:-moz-placeholder { color: rgb(170,170,170); font-size: 12px; }
+main section#form form p > input::-moz-placeholder { color: rgb(170,170,170); font-size: 12px; }
+main section#form form p > input:-ms-placeholder { color: rgb(170,170,170); font-size: 12px; }
+
+/* color purple i icons to focus */
+main section#form form p > input:focus + i {
+    color: rgb(132,106,221);
+}
+
+/* hide placeholder to focus */
+main section#form form p > input:focus::-webkit-input-placeholder { opacity: 0; }
+main section#form form p > input:focus:-moz-placeholder { opacity: 0; }
+main section#form form p > input:focus::-moz-placeholder { opacity: 0; }
+main section#form form p > input:focus:-ms-placeholder { opacity: 0; }
+
+main section#form form p > i {
+    position: relative;
+    right: 247px;
+    font-size: 12px;
+    color: rgb(170,170,170);
+}
+
+main section#form form > textarea {
+    width: 59%;
+    height: 100px;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    background: rgb(230,230,230);
+    color: rgb(170,170,170);
+    padding: 0.5rem 1rem;
+}
+
+main section#form form > textarea::-webkit-input-placeholder { color: rgb(170,170,170); }
+
+main section#form form > textarea:focus::-webkit-input-placeholder { color: rgb(132,106,221); }
+
+main section#form form p > #button {
+    width: 85%;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 1rem;
+    background: rgb(132,106,221);
+    color: #fff;
+}
+
+main section#form form p > #button:hover {
+    background: rgb(51,51,51);
+}

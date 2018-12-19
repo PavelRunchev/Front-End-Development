@@ -1,0 +1,161 @@
+
+@media all and (max-width: 479px) {
+
+    html {
+        margin: 0;
+        padding: 0;
+        background: pink;
+    }
+
+    /*
+    /* Nav Menu */
+    body .menu {
+        width: auto;
+        height: auto;
+        padding: 2rem 0.5rem;
+    }
+
+    .menu span {
+        margin: 0;
+        font-weight: bold;
+        letter-spacing: normal;
+    }
+
+    .menu span:after {
+        content: '\2630';
+        float:right;
+    }
+
+    .menu .nav-options {
+        display: none;
+    }
+    
+     /*
+    /* Header */
+
+    .about-us {
+        height: auto;
+        width: auto;
+        padding: 2.5rem 1rem;
+    }
+
+    .about-us h1 {
+        font-size: 18px;
+    }
+
+    .about-us p {
+        width: 100%;
+        font-size: 10px;
+        padding: 0;
+    }
+
+     /*
+    /* Section Best-place */
+
+    .best-place {
+        height: auto;
+    }
+
+    .info hr {
+        width: 18%;
+        margin-top: 0.5rem;
+        margin-bottom: 0;
+    }
+    .info .headings {
+        margin-top: 1em;
+        width: 90%;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .info .paragraph {
+        width: 90%;
+        padding: 1em 1em;
+        margin: 0;
+        line-height: 1.3;
+        font-size: 12px;
+    }
+
+    .views {
+        display: block;
+    }
+
+    .views img {
+        max-width: 100%;
+        width: 90%;
+        padding: 0.2rem;
+        margin: 0;
+    }
+
+  #second-heading {
+        width: auto;
+        margin-top: 2rem;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    .why-us {
+        display: block;
+        margin-top: 0;
+        padding-bottom: 1rem;
+    }
+
+    .why-us article {
+        width: 100%;
+    }
+
+    .why-us article .text-container h4 {
+        font-size: 16px;
+        margin-bottom: 0.5rem;
+    }
+
+    .why-us article .text-container p {
+        font-size: 10px;
+    }
+
+    .final-section .headings {
+        width: 90%;
+        padding: 1rem 0.5rem;
+        margin: 0;
+        margin-right: 0;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .final-section hr {
+        width: 14%;
+        margin-top: 0;
+        margin-bottom: 0.7rem;
+    }
+
+    .our-team {
+        display: block;
+        text-align: center;
+    }
+
+    .our-team article {
+        margin-right: 0;
+        padding: 0.7rem;
+    }
+
+    .our-team article h4 {
+        margin-bottom: 0;
+    }
+
+    .team-presenting {
+        margin-bottom: 0;
+    }
+
+    footer {
+        padding: 1rem 0.5rem;
+    }
+
+    footer .links {
+        display:none;
+    }
+
+    footer .design {
+        padding:0;
+        font-size: 10px;
+    }
+}

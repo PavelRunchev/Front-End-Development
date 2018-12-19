@@ -1,0 +1,66 @@
+
+
+@media screen and (max-width: 480px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-position: center;
+        background-size: auto;
+    }
+
+    header {
+        padding-top: 2rem;
+    }
+
+    header > .logo {
+        margin: 0 0 2rem 0;
+        margin-top: 5rem;
+    }
+
+    
+
+    header > .logo a {
+        font-size: 3.5rem;
+    }
+
+
+    .wrapper.style1 .content {
+        padding: 2rem;
+        font-size: 20px;
+        color: gray;
+    }
+
+    .wrapper.style2 {
+        padding: 2rem;
+    }
+
+    .gallery {
+        display: block;
+    }
+
+    .gallery > * {
+        width: 100%;
+    }
+
+
+    .spotlight {
+        display: block;
+    }
+
+    .spotlight > * {
+        width: 100%;
+    }
+
+    .spotlight .inner {
+        padding: 0 1.5rem 3rem 1.5rem;
+        text-align: center;
+    }
+
+    .spotlight .inner h3 {
+        font-size: 28px;
+    }
+
+    .spotlight .inner p {
+        font-size: 20px;
+    }
+}

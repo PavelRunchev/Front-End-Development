@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Karma');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+
+.billboard{
+    background: url(respons-header.jpg);
+    background-size: cover;
+    padding-top: 40px;
+    padding-left: 40px;
+    height: 750px;
+}
+.caption h1{
+    font-size: 50px;
+    font-weight: 400;
+    font-family: sans-serif;
+    color:royalblue;
+    margin-top: 96px;
+}
+.logo{
+    width:150px ;
+}
+.header-nav li,.header-nav ul,.header-nav{
+    display: inline-block;
+}
+.header-nav{
+    margin-left: 900px;
+    margin-top:-200px ;
+}
+
+.header-nav a{
+    text-decoration: none;
+    color:black;
+    font-size:20px;
+}
+.problem-picture{
+    margin-bottom: 30px;
+}
+.img-container .avatar{
+    width: 130px;
+    height: 110px;
+}
+.header-nav li{
+    margin-left: 20px;
+    border: 1px solid deepskyblue;
+    padding: 10px;
+    background: skyblue;
+    border-radius: 8px;
+}
+.caption p{
+    color:royalblue;
+    font-size:20px;
+    font-style: italic;
+}
+.caption hr{
+    border:none;
+    border-bottom: 2px solid royalblue;
+    width: 25%;
+    margin-left: 25px;
+}
+.services-wrapper{
+    margin-top: 50px;
+}
+.clearfix{
+    display: flex;
+    text-align: center;
+}
+.clearfix li{
+    list-style: none;
+    text-align: center;
+}
+.mountain-img{
+    background: url("mountain-img.jpg");
+    background-repeat:no-repeat ;
+    background-size: cover;
+    width: 1500px;
+    height: 800px;
+}
+.icon{
+    width: 200px;
+}
+.clearfix p,.clearfix h2 {
+    font-family: 'Karma', serif;
+}
+a{
+    font-family: 'Karma', serif;
+}
+.clearfix p{
+    width: 95%;
+    text-align: center;
+}
+.title h2{
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    padding-top: 60px;
+}
+.title h3#clients-says{
+    margin-left:625px;
+    color:darkgray;
+    font-family: 'Raleway', sans-serif;
+
+}
+.title hr{
+    width: 10%;
+}
+.img-container img{
+    width: 100px;
+    margin-left: 150px;
+}
+.clearfix{
+    font-family: 'Raleway', sans-serif;
+}
+.client{
+    display: flex;
+}
+.animated h2 {
+    font-weight: bold;
+    font-size: 42px;
+    padding-top: 60px;
+}
+.testimonials.wrapper{
+    margin-top: 0;
+}
+
+.animated h3{
+    text-align: center;
+}
+#recent-posts{
+    background:rgba(9, 4, 0, 0.1) ;
+    padding-bottom: 30px;
+
+}
+.date{
+    position: relative;
+    top:50px;
+    left:70px;
+    background-color: rgba(46, 138, 205, 0.5);
+    width: 30px;
+    padding: 10px;
+}
+.date span{
+    color:white;
+    font-weight: bold;
+}
+#last-clearfix{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+
+}
+.view-bot{
+    width: 200px;
+    height:300px ;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+.list-link{
+    text-decoration: none;
+    color:darkslategray;
+}
+.wrapper-last{
+    display: flex;
+    justify-content: space-between;
+}
+.wrapper-last nav li{
+    display: inline-block;
+    list-style: none;
+    margin-right: 15px;
+}
+.wrapper-last nav li a,.rights a{
+    text-decoration:none ;
+    font-family: sans-serif;
+    color:darkslategray;
+}
+.rights a{
+    color:royalblue;
+    margin-left: 10px;
+}
+.rights p{
+    font-family: 'Karma', serif;
+    color:darkgray;
+}
+
+
+@media all and (max-width: 480px){
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .billboard {
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+
+    .logo {
+        padding-top: 3rem;
+    }
+
+    .caption > p {
+        padding: 0 2rem;
+    }
+
+    .caption hr {
+        margin: 0 auto;
+    }
+
+    .header-nav {
+        display: none;
+    }
+
+    .icon {
+        padding-top: 3rem;
+    }
+
+    .clearfix {
+        display: block;
+        padding: 0;
+    }
+
+    .clearfix li {
+        border-bottom: 4px dotted rgb(212,212,212);
+    }
+
+    .clearfix li:nth-of-type(3) {
+        border-bottom: none;
+    }
+
+    .mountain-img {
+        width: 100%;
+        height: 272px;
+    }
+
+    .title h2 {
+        padding-top: 0;
+    }
+
+    .title h3#clients-says {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .client {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .img-container .avatar {
+        margin: 0 auto;
+    }
+
+    #last-clearfix {
+        flex-direction: column;
+    }
+
+    .date {
+        left: 190px;
+    }
+
+    .rights {
+        text-align: center;
+    }
+
+    .wrapper-last > nav {
+        display: none;
+    }
+}

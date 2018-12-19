@@ -1,0 +1,267 @@
+@import url('https://use.fontawesome.com/releases/v5.6.0/css/all.css');
+
+*, *:before, *:after {
+    margin: 0;
+    padding: 0;
+
+    -webkit-box-sizing: border-box !important;
+    -moz-box-sizing: border-box !important;
+    -ms-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+}
+
+
+/* NAVIGATION */
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5rem;
+}
+
+.navigation > .nav-title { font-size: 20px; }
+
+.navigation > .nav-title > .time { color: #34B1C4; }
+
+.navigation li {
+    display: inline-block;
+    padding: 1rem;
+}
+
+.navigation li > a {
+    text-decoration: none;
+    padding: 0.5rem 0;
+    color: #000;
+}
+
+.navigation li:first-child a {
+    border-bottom: 2px solid #34B1C4;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    background: url('./images/slide2.jpg');
+    background-size: cover;
+    height: 550px;
+    align-items: center;
+}
+
+header > .title {
+    width: 30%;
+    background: linear-gradient( rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+    color: #fff;
+    padding: 0.8rem;
+    margin-left: 16rem;
+}
+
+header > .title > h1 {
+    font-weight: 400;
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 0.3rem;
+}
+
+header > .title > button {
+    border: none;
+    cursor: pointer;
+    background: #008CBA;
+    color: #fff;
+    border-radius: 6rem;
+    padding: 0.6rem 2rem;
+    margin: 0.6rem 0;
+    font-size: 20px;
+}
+
+/* SECTION COMPANY */
+
+#company {
+    text-align: center;
+    padding: 2rem 11rem;
+}
+
+#company h2 {
+    color: rgb(69,69,69);
+    margin: 0;font-weight: 300;
+    font-size: 26px;
+
+}
+
+#company #dash-company {
+    display: inline-block;
+    border-bottom: 3px solid #34B1C4;
+    width: 6%;
+}
+
+#company > button {
+    bordeR: none;
+    background: rgb(69,69,69);
+    color: #fff;
+    padding: 0.8rem 2rem;
+    border-radius: 5rem;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 1rem 0;
+}
+
+/* sECTION SERVICES */
+
+#services {
+    background: #EEF0F1;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+#services h2 {
+    font-weight: 300;
+    margin: 0;
+}
+
+#services > #dash-services {
+    width: 6%;
+    border-bottom: 2px solid gray;
+    margin: 0.3rem auto;
+    margin-bottom: 2rem;
+    
+}
+
+#services .container-services {
+    width: 75%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+#services .container-services article {
+    width: 30%;
+    background: #fff;
+    border-radius: 0.3rem;
+    overflow: hidden;
+}
+
+#services .container-services article > img {
+    width: 100%;
+}
+
+#services .container-services article > h3 {
+    font-weight: 400;
+    margin: 2rem 0;
+}
+
+#services .container-services article > p {
+    padding: 0 2.5rem;
+    font-size: 18px;
+}
+
+#services .container-services article > button {
+    border: none;
+    background: rgb(69,69,69);
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 20px;
+}
+
+/* FOOTER SECTION */
+
+footer .subscribe {
+    background: rgb(57,63,67);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+footer .subscribe > h2 {
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0.3rem;
+}
+
+footer .subscribe #dash-subscribe {
+    width: 5%;
+    border-bottom: 2px solid gray;
+    margin: 0 auto;
+}
+
+footer .subscribe span > #email {
+    width: 25%;
+    outline: none;
+    border: none;
+    background: rgb(84,90,94);
+    color: gray;
+    padding: 0.5rem 1rem;
+    border-radius: 0.2rem;
+    margin-right: 0.5rem;
+}
+
+footer .subscribe span #subscribe-button {
+    border: none;
+    padding: 0.5rem 1.3rem;
+    background: rgb(107,191,255);
+    border-radius: 0.2rem;
+    color: #fff;
+    cursor: pointer;
+}
+footer .subscribe span #subscribe-button:hover {
+    background: #fff;
+    color: rgb(107,191,255);
+}
+
+
+footer .contacts {
+    background: rgb(47,53,57);
+    color: #fff;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+footer .contacts article h5 {
+    font-weight: 300;
+    font-size: 18px;
+    margin-bottom: 1rem;
+}
+
+footer .contacts article ul {
+    padding-left: 0;
+}
+
+footer .contacts article li {
+    padding: 0.5rem 0;
+    list-style: none;
+}
+
+footer .contacts article li > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .contacts .footer-address > p:nth-of-type(1) {
+    margin-bottom: 2.5rem;
+}
+
+.footer-follow-us > p > i {
+    margin: 0 0.3rem;
+}
+
+
+footer .copyright {
+    background: rgb(38,43,47);
+    color: #fff;
+    text-align: center;
+    padding: 0.8rem 0;
+}
+
+footer .copyright > span > #footer-inTime {
+    color: rgb(20,140,186);
+}

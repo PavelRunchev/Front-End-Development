@@ -1,0 +1,92 @@
+
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    .left-to-right:first-child { 
+        height: 556px; 
+        padding: 62px;
+    }
+
+    main .left-to-right article > button { display: none; }
+
+    main section:nth-child(2) { display: block; }
+
+    main section:nth-child(2) button { display: none; }
+
+    main section:nth-child(2) article img { width: 100%; }
+
+    main .left-to-right article {
+        width: 87%;
+        height: 450px;
+        padding: 9px 31px 41px 47px;
+        border-radius: 5rem;
+    }
+
+    main .left-to-right article header h1 {
+        font-size: 2.4rem;
+    }
+
+    body > main > section:nth-child(1) > article > header > p {
+        font-size: 22px;
+    }
+
+    main .left-to-right article > p {
+        font-size: 18px;
+    }
+
+    main section:nth-child(2) article {
+        margin-left: 11%;
+    }
+
+    body > main > section:nth-child(2) > article:nth-child(2) {
+        margin: 0;
+    }
+
+
+    body > main > section:nth-child(4) > article:nth-child(1) > form {
+        width: 100%;
+        text-align: center;
+    }
+
+    body > main > section:nth-child(2) > article:nth-child(1) > header > h1 {
+        font-size: 2.5rem;
+    }
+
+    body > main > section:nth-child(2) > article:nth-child(1) > header > p {
+        font-size: 1.4rem;
+    }
+
+    body > main > section:nth-child(2) > article:nth-child(1) > p {
+        font-size: 18px;
+    }
+
+    main section:nth-child(4) {
+        display: block;
+    }
+
+    main section:nth-child(4) article {
+        display: block;
+    }
+
+    section form label input, section form textarea {
+        width: 80%;
+    }
+
+    body > main > section:nth-child(4) > article:nth-child(2) {
+        display: block;
+        text-align: center;
+    }
+
+    main section:nth-child(4) article img {
+        width: 80%;
+    }
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900');
+
+@import url('https://use.fontawesome.com/releases/v5.6.0/css/all.css');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 40%;
+    height: 480px;
+    display: flex;
+    overflow: hidden;
+}
+
+/* Section Photo */
+
+.photo {
+    width: 50%;
+    background: linear-gradient( rgba(255,255,255,0.1), rgba(137,32,100,0.8)), 
+    url('./img/peak.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.photo > h1 {
+    padding: 0 0 20rem 0;
+}
+
+.photo > div {
+    font-style: italic;
+    font-size: 18px;
+}
+
+/* Section Form */
+
+.form {
+    width: 40%;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border: 2px solid #892064;
+    padding-left: 5rem;
+    
+}
+
+.form > form { padding-top: 7rem; }
+
+.fa-times {
+    color: #892064;
+    position: relative;
+    float: right;
+    padding: 0.7rem;
+}
+
+.form form > p {
+    width: 70%;
+}
+
+.form form p > label {
+    display: block;
+    font-size: 12px;
+    color: rgb(224,224,224);
+}
+
+.form form p > input {
+    outline: none;
+    border: none;
+    border-bottom: 1px solid gray;
+    padding: 0.3rem 0;
+    width: 90%;
+}
+
+
+
+
+
+
+.form #button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0.5rem 1.3rem;
+    background: #892064;
+    color: #fff;
+    border-radius: 1.2rem;
+    margin-right: 0.5rem;
+    margin-top: 1.5rem;
+}
+
+.form #sign-in {
+    text-decoration: none;
+    color: #892064;
+    margin-left: 0.5rem;
+    text-shadow: 1px 1px rgba(0,0,0,0.5);
+}

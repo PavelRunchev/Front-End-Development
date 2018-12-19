@@ -1,0 +1,216 @@
+
+/* Roboto  */
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+/* Font Awesome */
+@import url('https://use.fontawesome.com/releases/v5.6.0/css/all.css');
+
+/* Box-sizing fix */
+* {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    
+}
+
+main {
+    width: 65%;
+    margin-top: 6rem;
+    border: 1px solid #000;
+}
+
+/* HEADER */
+
+main > header {
+    background: rgb(236,236,236);
+    text-align: center;
+    color: rgb(76,76,76);
+}
+
+main > header > i {
+    display: inline-block;
+    font-size: 26px;
+    margin-right: 0.5rem;
+}
+
+main > header > h1 {
+    display: inline-block;
+    font-size: 30px;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+}
+
+/* SECTION Shopping */
+
+.shopping {
+    display: flex;
+}
+
+
+/* ARTICLE IMAGE */
+.image {
+    width: 34.5%;
+    color: rgb(76,76,76);
+    border-right: 1px solid #000;
+    text-align: center;
+}
+
+.image > img {
+    width: 100%;
+}
+
+.image > p {
+    font-size: 20px;
+    text-align: left;
+    padding-left: 1.5rem;
+}
+
+/* ARTICLE FORM */
+
+.form {
+    width: 65%;
+    
+    color: rgb(76,76,76);
+    overflow: hidden;
+}
+
+.form > form {
+    padding-left: 2rem;
+}
+
+.form > form > p {
+    padding: 0.3rem 0;
+}
+
+/* INPUT DESTIONATION */
+.form > form > p:nth-of-type(1) {
+    width: 100%;
+}
+
+.form > form > p:nth-of-type(1) > input {
+    border: none;
+    outline: none;
+    width: 93%;
+    border: 1px solid #000;
+    border-radius: 0.7rem;
+    padding: 0.7rem;
+}
+
+.form > form > p:nth-of-type(1) > input::-webkit-input-placeholder {
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+}
+
+.form > form > p:nth-of-type(1) > i {
+    position: relative;
+    right: 1.5rem;
+}
+
+/* INPUT ENTRY, EXIT and TIME */
+.form > form > p:nth-of-type(2) > label,
+.form > form > p:nth-of-type(3) > label { margin-right: 1rem; }
+
+.form > form > p:nth-of-type(3) > label:nth-of-type(2) { margin-right: 0.5rem; }
+
+.form > form > p:nth-of-type(2) > input,
+.form > form > p:nth-of-type(3) > input  {
+    border: none;
+    outline: none;
+    width: 33%;
+    margin-right: 1rem;
+    border: 1px solid #000;
+    border-radius: 0.7rem;
+    padding: 0.7rem 1rem;
+}
+
+.form > form > p:nth-of-type(2) > input::-webkit-input-placeholder {
+    font-size: 20px;
+    color: #000;
+    letter-spacing: 0.05rem;
+}
+
+.form > form > p:nth-of-type(3) > input::-webkit-input-placeholder {
+    font-size: 20px;
+    color: #000;
+    letter-spacing: 0.3rem;
+   
+}
+
+
+/* Button Search */
+
+.form .button { text-align: center; }
+
+.form .button > #search {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: #fff;
+    background: rgb(227,75,74);
+    padding: 0.6rem 1.2rem;
+    border-radius: 0.8rem;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 1rem;
+}
+
+.form .button > #search:hover { background: rgb(205,47,61); }
+
+@media screen and (max-width: 1525px) {
+    .form > form > p:nth-of-type(2) > input,
+    .form > form > p:nth-of-type(3) > input  {
+    width: 25%;
+    }
+
+    .form > form > p:nth-of-type(1) > input {
+        width: 85%;
+    }
+
+    .form > form > p:nth-of-type(1) > input::-webkit-input-placeholder {
+        font-size: 16px;
+    }
+
+    .form > form > p:nth-of-type(2) > input::-webkit-input-placeholder {
+        font-size: 18px;
+    }
+
+    .form > form > p:nth-of-type(3) > input::-webkit-input-placeholder {
+        font-size: 18px;
+       
+    }
+}
+
+@media screen and (max-width: 1230px) {
+    .form > form > p:nth-of-type(2) > input,
+    .form > form > p:nth-of-type(3) > input  {
+        width: 25%;
+    }
+
+    .form > form > p:nth-of-type(1) > input {
+        width: 85%;
+    }
+
+    .form > form > p:nth-of-type(1) > input::-webkit-input-placeholder {
+        font-size: 14px;
+    }
+
+    .form > form > p:nth-of-type(2) > input::-webkit-input-placeholder {
+        font-size: 16px;
+    }
+
+    .form > form > p:nth-of-type(3) > input::-webkit-input-placeholder {
+        font-size: 16px;
+    }
+}

@@ -1,0 +1,270 @@
+
+/* Font Awesome */
+@import url('https://use.fontawesome.com/releases/v5.6.0/css/all.css');
+
+/* Box-sizing fix */
+* {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica', sans-serif;
+}
+
+
+
+/* SECTION NAV */
+nav {
+    padding: 0 5rem;
+    color: #4D5A6C;
+    position: relative;
+}
+
+/* LOGO */
+
+#logo {
+    background: linear-gradient(to bottom, rgbA(203,167,56,1), rgba(150,104,11,1));
+    width: 10%;
+    position: absolute;
+    top: 0;
+    left: 16rem;
+    padding: 3rem;
+    text-align: center;
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.75);
+}
+
+#logo > img {
+    width: 100%;
+}
+
+/* Upper Navigtion */
+
+nav .upper-navigation {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+nav .upper-navigation > div {
+    padding: 0.7rem 1.8rem;
+    text-align: center;
+}
+
+nav .upper-navigation > div:hover {
+    background: #B58E10;
+    color: #fff;
+}
+
+nav .upper-navigation > div:hover a {
+    color: #fff;
+}
+
+nav .upper-navigation > div > i {
+    display: block;
+    padding: 0.5rem;
+    font-size: 30px;
+}
+
+nav .upper-navigation > div > a {
+    text-decoration: none;
+    color: #4D5A6C;
+}
+
+
+/* Navigation */
+nav > .navigtion {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+}
+
+nav > .navigtion > ul {
+    margin-bottom: 0.7rem;
+}
+
+nav > .navigtion > ul > li {
+    display: inline-block;
+    
+}
+
+nav > .navigtion > ul > li > a {
+    text-decoration: none;
+    padding: 0.8rem 1.1rem;
+    color: #4D5A6C;
+}
+
+nav > .navigtion > ul > li:hover a {
+    background: #B58E10;
+    color: #fff;
+}
+
+/* HEADER */
+
+header {
+    background: url('./img/slider.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 14rem 0 7rem 17rem;
+}
+
+header .shuttle {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6));
+    width: 30%;
+    color: #fff;
+    padding: 2.1rem;
+}
+
+header .shuttle > p {
+    font-size: 19px;
+}
+
+header .shuttle > #read-more {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0.8rem 1.5rem;
+    border: 3px solid #fff;
+    font-weight: bold;
+    background: none;
+    color: #F6A518;
+    font-size: 20px;
+    border-radius: 0.2rem;
+}
+
+header .shuttle > #read-more:hover {
+    background: #fff;
+    color: #F6A518;
+}
+
+/* SECTION BUY CARDS */
+
+#buy-cards {
+    background: linear-gradient(to right, rgba(149,102,10,1),rgba(207,171,59));
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+}
+
+#buy-cards > h2 {
+    font-size: 30px;
+    margin-top:0;
+}
+
+#buy-cards > div {
+    width: 27%;
+    margin: 0 auto;
+    text-align: left;
+    padding: 0.5rem 0;
+}
+
+#buy-cards > div > i {
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 18px;
+}
+
+#buy-cards > div > span {
+    font-size: 18px;
+}
+
+#buy-cards > #buy-now {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0.8rem 1.5rem;
+    border: 3px solid #fff;
+    font-weight: bold;
+    background: none;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 1rem;
+}
+
+
+/* SECTION budapest-cards */
+#budapest-cards {
+    text-align: center;
+    padding: 2rem 0;
+    color: #4D5A6C;
+}
+
+#budapest-cards > h2 {
+    font-size: 35px;
+    font-weight: 300;
+    letter-spacing: 0.2rem;
+    padding: 0 22%;
+}
+
+#budapest-cards > .cards {
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+#budapest-cards > .cards > article {
+    width: 18%;
+}
+
+
+#budapest-cards > .cards > article > img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid #4D5A6C;
+    padding: 2px;
+}
+
+#budapest-cards > .cards > article > h4 {
+    font-size: 12px;
+}
+
+
+
+
+
+/* FOOTER */
+
+footer > .subscribe {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    background: #B58E0F;
+    padding: 0.8rem 1.5rem;
+
+}
+
+footer > .subscribe > .newsletter > h3 {
+    margin-bottom: 0;
+    margin-top: 0.5rem;
+}
+
+footer > .subscribe > .newsletter > p {
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+footer > .subscribe > .button > #subscribe {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0.8rem 1.5rem;
+    border: 3px solid #fff;
+    font-weight: bold;
+    background: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+footer > .copyright {
+    text-align: center;
+    padding: 0.5rem 0;
+}
