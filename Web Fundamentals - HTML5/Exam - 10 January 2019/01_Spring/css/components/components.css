@@ -1,0 +1,66 @@
+.c_header_background {
+  width: 100%;
+  height: 180px;
+  background-image: url("../../images/cover.jpg");
+  border-radius: 30px;
+  border: 1px solid #fff;
+}
+
+.c_header_links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2% 0;
+}
+
+.c_header_links p {
+  font-size: 14px;
+}
+
+.c_header_links p .c_header_shop_now {
+  margin-right: 5px;
+}
+
+.c_header_links p .c_header_dashes {
+  position: relative;
+  display: inline-block;
+  top: -5px;
+  width: 90px;
+  height: 10px;
+  color: #CBCBCB;
+  border-bottom-style: dashed;
+}
+
+.c_header_links p .c_header_shop_now, .c_header_links p .fa-arrow-down {
+  color: #E6DE55;
+}
+
+.c_card {
+  width: 17%;
+  height: 300px;
+  -webkit-box-shadow: 0px 0px 12px 0px #000000;
+  box-shadow: 0px 0px 12px 0px #000000;
+  padding: 1%;
+  border-radius: 2px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-evenly;
+}
+
+.c_card_image {
+  width: 100%;
+}
+
+.c_card_content {
+  height: 50px;
+  padding: 10px 5px 15px 5px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.c_card_price {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+  color: #73368C;
+  font-weight: bold;
+}

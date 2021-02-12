@@ -1,0 +1,144 @@
+
+
+@media screen and (max-width: 600px) {
+	body {
+		color: purple;
+	}
+
+
+	header nav, header nav ul {
+		display: flex;
+		flex-flow:column wrap;
+		align-items: center;
+	}
+
+	header nav img {
+		width: 80%;
+		padding-left: 0;
+	}
+
+	header nav ul {
+		left: 0;
+		padding-bottom: 0;
+	}
+
+	header nav ul li {
+		margin: 5px;
+	}
+
+	header nav p {
+		width: 100%;
+		text-align: center;
+		background: #4BBED1;
+		color: #fff;
+		margin: 0;
+		padding: 1.5% 0;
+	}
+
+	header section {
+		background-size: 395% 103%;
+	}
+
+	header section h1,
+	header section h2 {
+		font-size: 1.2em;
+	}
+
+	header section button {
+		width: 60%;
+		max-width: 60%;
+		min-width: 60%;
+	}
+
+	main section:first-child h1 {
+		width: 100%;
+		font-size: 6rem;
+	}
+
+	main section:first-child div {
+		display: flex;
+		flex-flow: column wrap;
+		align-items: center;
+	}
+
+	main section:first-child div article {
+		width: 75%;
+		padding-bottom: 7%;
+	}
+
+	main section:first-child div article img {
+		width: 100%;
+	}
+
+	main section:nth-child(2) {
+		display: flex;
+		flex-flow: column wrap;
+	}
+
+	main section:nth-child(2) article {
+		width: 100%;
+		padding: 5% 0;
+	}
+
+	main section:nth-child(2) article:first-child img {
+		width: 85%;
+		display: block;
+		margin: 0 auto;
+		margin-bottom: 20px;
+	}
+
+	main section:nth-child(2) article:nth-child(2) {
+		top: 0;
+		left: 0;
+	}
+
+	main section:nth-child(2) article:nth-child(2) h1 {
+		font-size: 4rem;
+	}
+
+	main section:nth-child(2) article:nth-child(2) div p {
+		padding: 0 6%;
+		font-size: 24px;
+	}
+
+	main section:nth-child(2) article:nth-child(2) div button {
+		width: 40%;
+		max-width: 40%;
+		min-width: 40%;
+	}
+
+	footer {
+		margin: 0;
+	}
+
+	footer nav ul {
+		margin: 0;
+		display: flex;
+		flex-flow: column wrap;
+		align-self: center;
+	}
+
+	footer nav:nth-child(1) ul  li {
+		margin: 10px;
+	}
+
+	footer nav:nth-child(1) img {
+		margin-left: 0;
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+		padding-right: 20px;
+	}
+
+	footer #social-nav {
+		margin: 0;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-around;
+	}
+
+	footer #social-nav div {
+		width: 10%;
+	}
+}

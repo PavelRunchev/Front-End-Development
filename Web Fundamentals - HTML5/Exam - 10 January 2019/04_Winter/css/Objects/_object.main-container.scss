@@ -1,0 +1,15 @@
+.o-container {
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: 570px auto 70px;
+}
+
+.o-main-container {
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto auto;
+}

@@ -1,0 +1,205 @@
+@font-face {
+  font-family: 'Open Sans';
+  src: url("./fonts/open-sans/OpenSans-Regular.eot") format("embedded-opentype");
+  src: url("./fonts/open-sans/OpenSans-Regular.ttf") format("truetype");
+  src: url("./fonts/open-sans/OpenSans-Regular.woff") format("woff");
+  src: url("./fonts/open-sans/OpenSans-Regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h4, button, input {
+  font-family: 'Open Sans';
+}
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: 100%;
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container-form {
+  width: 680px;
+  height: 620px;
+  margin-top: 1.5%;
+  background-color: #FEFEFE;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(50, 50, 50, 0.6);
+  box-shadow: 0px 0px 9px 0px rgba(50, 50, 50, 0.6);
+  border-radius: 5px;
+  padding: 2.5%;
+}
+
+h4 {
+  color: #F41311;
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.autumn {
+  color: #F41311;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+
+.fullName-label,
+.email-label,
+.password-label,
+.card-number-label {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin: 3% 0;
+}
+
+input {
+  display: inline-block;
+  width: 100%;
+  outline: none;
+  background-color: #F9F9F9;
+  border: 1px solid #B7B7B6;
+  border-radius: 3px;
+  padding: 15px 10px 15px 50px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+input:focus {
+  border-color: #F41311;
+}
+
+input:focus ~ .fa-user {
+  color: #F41311;
+}
+
+.full-name:focus ~ .fa-user {
+  color: #F41311;
+  border-color: #F41311;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.email-adress:focus ~ .fa-envelope {
+  color: #F41311;
+  border-color: #F41311;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.password:focus ~ .fa-key {
+  color: #F41311;
+  border-color: #F41311;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.fa-user,
+.fa-envelope,
+.fa-key,
+.fa-credit-card {
+  position: relative;
+  color: #B7B7B6;
+  padding: 10px;
+  background-color: #F9F9F9;
+  border-right: 1px solid #B7B7B6;
+  top: -42px;
+  left: 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.card-number:focus ~ .fa-credit-card {
+  color: #F41311;
+  border-color: #F41311;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.container-btn-cards {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-bottom: 4%;
+}
+
+.credit-card-btn,
+.paypal-btn {
+  cursor: pointer;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 20px 30px;
+  border: 1px solid #B7B7B6;
+  border-radius: 3px;
+  color: #B7B7B6;
+  -webkit-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+
+.credit-card-btn:hover,
+.paypal-btn:hover {
+  background-color: #F41311;
+  color: #FEFEFE;
+}
+
+.contaienr-send-btn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.send-btn {
+  cursor: pointer;
+  width: 50%;
+  padding: 20px 30px;
+  background-color: #F41311;
+  color: #FEFEFE;
+  outline: none;
+  border: 1px solid #B7B7B6;
+  border-radius: 3px;
+  -webkit-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+
+.send-btn:hover {
+  background-color: #FEFEFE;
+  border-color: #F41311;
+  color: red;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,12 @@
+@import url("./settings/settings.background.css");
+@import url("./objects/objects.container.css");
+@import url("./components/components.css");
+html {
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+html * {
+  margin: 0;
+  padding: 0;
+}

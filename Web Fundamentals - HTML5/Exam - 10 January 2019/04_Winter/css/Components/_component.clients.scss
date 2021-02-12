@@ -1,0 +1,32 @@
+
+.c-clients {
+	width: 100%;
+	height: auto;
+	grid-column: 1 / 2;
+	grid-row: 2 / 3;
+
+	&-container-clients {
+		width: 100%;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: center;
+	}
+
+	&-client {
+		width: 20%;
+		margin: 0 1%;
+	}
+
+	&-img {
+		display: block;
+		margin: 2% auto;
+		width: 45%;
+		border-radius: 50%;
+	}
+
+	&-client-name {
+		text-align: center;
+		font-size: 20px;
+		font-weight: bold;
+	}
+}

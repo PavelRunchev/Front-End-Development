@@ -1,0 +1,67 @@
+
+.c-contact-us {
+	grid-column: 1 / 2;
+	grid-row: 3 / 4;
+	background-color: $background-color-grey;
+
+	.e-h2 {
+		color: $primery-color-white;
+		font-weight: 300;
+	}
+
+	.e-paragraph {
+		color: $primery-color-white;
+		text-align: center;
+		padding: 0 17% 0 18%;
+		font-weight: 300;
+		font-size: 22px;
+	}
+
+	&-container-form-and-map {
+		width: 70%;
+		margin: 1% auto;
+		display: flex;
+		flex-flow: row wrap;
+		flex-grow: 1;
+		padding-right: 5%;
+	}
+
+	&-form,
+	&-container-map {
+		width: 50%;
+	}
+
+	&-form {
+		text-align: left;
+	}
+
+	&-form-label {
+		display: block;
+		color: $primery-color-white;
+		font-weight: bold;
+		font-size: 22px;
+	}
+
+	&-form-textarea {
+		display: block;
+		width: 95%;
+		height: 55%;
+		margin: 3% 0;
+	}
+
+	&-form-btn {
+		cursor: pointer;
+		outline: none;
+		border: none;
+		color: $primery-color-white;
+		background-color: $four-color-dark-skyblue;
+		padding: 15px 55px;
+		font-size: 18px;
+		margin-top: 1%;
+	}
+
+	&-map-image {
+		width: 100%;
+	}
+}
+

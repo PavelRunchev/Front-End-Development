@@ -1,0 +1,16 @@
+
+main {
+	width: 100%;
+	height: 100vh;
+	background: url('../../images/background.png');
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.c_header {
+	display: flex;
+	flex-flow: column wrap;
+	width: 50%;
+}
